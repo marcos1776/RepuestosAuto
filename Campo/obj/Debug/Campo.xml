@@ -1,0 +1,431 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Campo
+</name>
+</assembly>
+<members>
+<member name="T:Campo.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Campo.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Campo.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Campo.My.Resources.Resources.cambiar_bateria_auto">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Campo.My.Resources.Resources.Fondo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Campo.My.Resources.Resources.PathArticulosProveedores">
+<summary>
+  Busca una cadena traducida similar a C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\PlanillaArticulosProveedores\.
+</summary>
+</member>
+<member name="T:Campo.CampoDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Campo.CampoDataSet.SP_ListadoComprasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Campo.CampoDataSet.SP_ListadoComprasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Campo.CampoDataSet.SP_ListadoComprasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Campo.CampoDataSetTableAdapters.SP_ListadoComprasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Campo.CampoDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Campo.CampoDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Campo.CampoDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.CampoDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Campo.CampoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.CampoDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Campo.CampoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Campo.CampoDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Campo.CampoDataSetTableAdapters.TableAdapterManager.UpdateAll(Campo.CampoDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Campo.CampoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Campo.CampoDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Campo.ListadoVentas">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Campo.ListadoVentas.SP_ListadoVentasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Campo.ListadoVentas.SP_ListadoVentasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Campo.ListadoVentas.SP_ListadoVentasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Campo.ListadoVentasTableAdapters.SP_ListadoVentasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Campo.ListadoVentasTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Campo.ListadoVentasTableAdapters.TableAdapterManager.UpdateUpdatedRows(Campo.ListadoVentas,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.ListadoVentasTableAdapters.TableAdapterManager.UpdateInsertedRows(Campo.ListadoVentas,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.ListadoVentasTableAdapters.TableAdapterManager.UpdateDeletedRows(Campo.ListadoVentas,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Campo.ListadoVentasTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Campo.ListadoVentasTableAdapters.TableAdapterManager.UpdateAll(Campo.ListadoVentas)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Campo.ListadoVentasTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Campo.ListadoVentasTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Campo.ComprasListado">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Campo.ComprasListado.SP_ListadoComprasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Campo.ComprasListado.SP_ListadoComprasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Campo.ComprasListado.SP_ListadoComprasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Campo.ComprasListadoTableAdapters.SP_ListadoComprasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Campo.ComprasListadoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Campo.ComprasListadoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Campo.ComprasListado,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.ComprasListadoTableAdapters.TableAdapterManager.UpdateInsertedRows(Campo.ComprasListado,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.ComprasListadoTableAdapters.TableAdapterManager.UpdateDeletedRows(Campo.ComprasListado,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Campo.ComprasListadoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Campo.ComprasListadoTableAdapters.TableAdapterManager.UpdateAll(Campo.ComprasListado)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Campo.ComprasListadoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Campo.ComprasListadoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Campo.CompraUnitaria">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Campo.CompraUnitaria.SP_CompraEspecificaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Campo.CompraUnitaria.SP_CompraEspecificaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Campo.CompraUnitaria.SP_CompraEspecificaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Campo.CompraUnitariaTableAdapters.SP_CompraEspecificaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Campo.CompraUnitariaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Campo.CompraUnitariaTableAdapters.TableAdapterManager.UpdateUpdatedRows(Campo.CompraUnitaria,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.CompraUnitariaTableAdapters.TableAdapterManager.UpdateInsertedRows(Campo.CompraUnitaria,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.CompraUnitariaTableAdapters.TableAdapterManager.UpdateDeletedRows(Campo.CompraUnitaria,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Campo.CompraUnitariaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Campo.CompraUnitariaTableAdapters.TableAdapterManager.UpdateAll(Campo.CompraUnitaria)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Campo.CompraUnitariaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Campo.CompraUnitariaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuarios">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuarios.SP_ReporteUsuariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuarios.SP_ReporteUsuariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuarios.SP_ReporteUsuariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuariosTableAdapters.SP_ReporteUsuariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuariosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.UpdateUpdatedRows(Campo.ReporteUsuarios,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.UpdateInsertedRows(Campo.ReporteUsuarios,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.UpdateDeletedRows(Campo.ReporteUsuarios,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.UpdateAll(Campo.ReporteUsuarios)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Campo.ReporteUsuariosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Campo.VentaEspecifica">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Campo.VentaEspecifica.SP_VentaEspecificaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Campo.VentaEspecifica.SP_VentaEspecificaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Campo.VentaEspecifica.SP_VentaEspecificaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Campo.VentaEspecificaTableAdapters.SP_VentaEspecificaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Campo.VentaEspecificaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Campo.VentaEspecificaTableAdapters.TableAdapterManager.UpdateUpdatedRows(Campo.VentaEspecifica,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.VentaEspecificaTableAdapters.TableAdapterManager.UpdateInsertedRows(Campo.VentaEspecifica,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Campo.VentaEspecificaTableAdapters.TableAdapterManager.UpdateDeletedRows(Campo.VentaEspecifica,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Campo.VentaEspecificaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Campo.VentaEspecificaTableAdapters.TableAdapterManager.UpdateAll(Campo.VentaEspecifica)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Campo.VentaEspecificaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Campo.VentaEspecificaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,627 @@
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.GenerarReporteCompras.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.GenerarReporteVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\marcos.lampacrescia\Desktop\Marcos\Marce\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteCompras.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteCompras.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteVenta.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\Administrador\Desktop\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteCompras.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteVenta.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.UsuarioFamilia.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.UsuarioPatente.resources
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\Administrador\Desktop\Diploma\Campo\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteCompras.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.GenerarReporteVenta.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.UsuarioFamilia.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Campo.UsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Back up - Bangho\Back up - Bangho\Diploma\Campo\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaCliente.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaEmpresa.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.AsignarUsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ReporteListadoVentas.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ReporteVentaEspecifica.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.Reporte.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ReportePedidoListado.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.ReporteListadoUsuarios.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.UsuarioFamilia.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.UsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\RdlCompile.cache
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\RdlCompile.compiled
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Ayuda\MenuUsuarios.chm
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Ayuda\AltaUsuario.chm
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Ayuda\AdminProveedores.chm
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Campo.exe.config
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.exe
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.xml
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.pdb
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Ayuda\MenuUsuarios.chm
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Ayuda\AltaUsuario.chm
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Ayuda\AdminProveedores.chm
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Campo.exe
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Campo.pdb
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Campo.xml
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\BLL.dll
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\DAL.dll
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\BLL.pdb
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\BLL.xml
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\DAL.pdb
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\bin\Debug\DAL.xml
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaCliente.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaEmpresa.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.AsignarUsuarioPatente.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.Login.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ReporteListadoVentas.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ReporteVentaEspecifica.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.Reporte.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ReportePedidoListado.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ReporteListadoUsuarios.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.UsuarioFamilia.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.UsuarioPatente.resources
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\RdlCompile.cache
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\RdlCompile.compiled
+C:\Users\mlampacrescia\Desktop\Marcos\Campo\Campo\Campo\obj\Debug\Campo.ReporteArticuloMasVendidos.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Campo.exe.config
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Ayuda\MenuUsuarios.chm
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Ayuda\AltaUsuario.chm
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Ayuda\AdminProveedores.chm
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\BLL.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\DAL.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\BLL.pdb
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\BLL.xml
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\DAL.pdb
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\DAL.xml
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaCliente.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaEmpresa.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.AsignarUsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.Inicio.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.Login.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ReporteArticuloMasVendidos.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ReporteListadoVentas.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ReporteVentaEspecifica.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.Reporte.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ReportePedidoListado.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ReporteListadoUsuarios.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.UsuarioFamilia.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.UsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\RdlCompile.cache
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\RdlCompile.compiled
+C:\Users\LampaPc\Desktop\Campo 24.04.2017\Campo\obj\Debug\Campo.ConfigurarConnectionString.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Campo.exe.config
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Ayuda\MenuUsuarios.chm
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Ayuda\AltaUsuario.chm
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Ayuda\AdminProveedores.chm
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Campo.pdb
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\BLL.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\DAL.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\BLL.pdb
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\BLL.xml
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\DAL.pdb
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\DAL.xml
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Views.vbprojResolveAssemblyReference.cache
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.Administrar_Articulos.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministracionCliente.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministracionFamilias.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministracionPedidos.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministracionProveedores.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministracionUsuarios.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministrarPresupuestos.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AdministrarVentas.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaArticulo.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaCliente.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaCorreccion.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaEmpresa.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaFamilia.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaPedido.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaPresupuesto.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaProveedor.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaUsuario.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AltaVenta.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ArticulosBajoStock.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AsignacionUsuarioPatentes.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.AsignarUsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.BuscarCliente.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.CargarStockAProveedor.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ConfigurarConnectionString.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ConsultarArticulo.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ConsultarBitacora.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ConsultarPedido.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.Inicio.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.MenuPrincipal.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarContraseña.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ConsultarVenta.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.InhabilitacionUsuario.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.Login.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarArticulo.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarFamilia.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarPedido.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarPresupuesto.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarProveedor.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarUsuario.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ModificarVenta.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.Resources.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.RealizarBackup.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.RealizarRestore.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.RecuperarContraseña.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ReporteArticuloMasVendidos.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ReporteListadoVentas.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ReporteVentaEspecifica.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.Reporte.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ReportePedidoListado.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.ReporteListadoUsuarios.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.UsuarioFamilia.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Campo.UsuarioPatente.resources
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\RdlCompile.cache
+C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\Campo\obj\Debug\RdlCompile.compiled
+C:\Users\LampaPc\Desktop\Github\Campo\bin\Debug\Campo.exe.config
+C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\Campo.exe
+C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\Campo.xml
+C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\Campo.pdb
