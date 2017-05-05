@@ -106,3 +106,15 @@ C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\BLL\obj\Debug\BLL.vbproj.Gener
 C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\BLL\obj\Debug\BLL.dll
 C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\BLL\obj\Debug\BLL.xml
 C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\BLL\obj\Debug\BLL.pdb
+C:\Users\LampaPc\Desktop\Github\BLL\bin\Debug\BLL.dll
+C:\Users\LampaPc\Desktop\Github\BLL\bin\Debug\BLL.pdb
+C:\Users\LampaPc\Desktop\Github\BLL\bin\Debug\BLL.xml
+C:\Users\LampaPc\Desktop\Github\BLL\bin\Debug\DAL.dll
+C:\Users\LampaPc\Desktop\Github\BLL\bin\Debug\DAL.pdb
+C:\Users\LampaPc\Desktop\Github\BLL\bin\Debug\DAL.xml
+C:\Users\LampaPc\Desktop\Github\BLL\obj\Debug\BLL.vbprojResolveAssemblyReference.cache
+C:\Users\LampaPc\Desktop\Github\BLL\obj\Debug\BLL.Resources.resources
+C:\Users\LampaPc\Desktop\Github\BLL\obj\Debug\BLL.vbproj.GenerateResource.Cache
+C:\Users\LampaPc\Desktop\Github\BLL\obj\Debug\BLL.dll
+C:\Users\LampaPc\Desktop\Github\BLL\obj\Debug\BLL.xml
+C:\Users\LampaPc\Desktop\Github\BLL\obj\Debug\BLL.pdb

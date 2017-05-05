@@ -23,14 +23,14 @@
         Dim artDs As New DataSet()
         artDs = articulo.BuscarArticulo(art)
 
-        Dim maxPermitido = artDs.Tables("DatosArticulo").Rows(0).Item("StockMaximo")
+        Dim maxPermitido = Convert.ToInt32(artDs.Tables("DatosArticulo").Rows(0).Item("StockMaximo"))
         'Me traigo el stock actual
         Dim stockActual As Integer = ped.obtenerStockActual(art)
 
         If (stockActual + cant) <= maxPermitido Then
-            Return False
-        Else
             Return True
+        Else
+            Return False
         End If
     End Function
 

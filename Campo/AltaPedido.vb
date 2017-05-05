@@ -12,7 +12,7 @@ Public Class AltaPedido
 
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles lblCancel.Click
-        Me.Hide()
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 
@@ -305,6 +305,7 @@ Public Class AltaPedido
             Dim rows As DataGridViewRow = DataGridView1.Rows(rowIndex)
 
             Dim nombreArticulo As String = rows.Cells(1).Value
+            Dim idArticulo As String = rows.Cells(0).Value
 
             'Dim NombreArticulo As String = DataGridView1.SelectedCells(1).RowIndex.ToString
             Dim cantidad = TextBox1.Text
@@ -317,7 +318,7 @@ Public Class AltaPedido
             If (pedido.VerificarStockProveedor(Proveedor, nombreArticulo, cantidad)) Then
                 'Verificar stock maximo
 
-                If (pedido.VerificarStockMaximo(nombreArticulo, cantidad)) Then
+                If (pedido.VerificarStockMaximo(idArticulo, cantidad)) Then
 
                     Dim Articulo As New BLL.Articulo(Proveedor, nombreArticulo, cantidad)
                     dt = Articulo.mapearArticulosAobjeto(Proveedor, nombreArticulo, cantidad)
@@ -335,7 +336,12 @@ Public Class AltaPedido
 
                     'DataGridView2.DataSource = Carrito
                 Else
-                    MessageBox.Show("Se ha superado el Stock Maximo permitido")
+                    If Login.ID_IDIOMA = 1 Then
+                        MessageBox.Show("Se ha superado el Stock Maximo permitido")
+                    Else
+                        MessageBox.Show("You have exceed the maximum quantity for this item")
+                    End If
+
                 End If
             Else
                 MessageBox.Show("El Proveedor no posee el Stock suficiente para este articulo")

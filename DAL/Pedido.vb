@@ -37,12 +37,14 @@ Public Class Pedido
         Dim sqlCon As New SqlConnection(My.Resources.con)
         sqlCon.Open()
 
-        Dim query As String = "select idArticulo , sum(cant) from " +
-        "( " +
-            "select idArticulo , sum(cantidad*-1) from Detalle_Venta where idArticulo = '" & art & "' UNION ALL " +
-            "select idArticulo, sum(cantidad) from detalle_Pedido where idArticulo = '" & art & "'   UNION ALL " +
-            "select idArticulo, sum(cantidad) from Correccion_Stock where idArticulo = '" & art & "' +   
-	    )"
+        Dim query As String =
+        "Select  idArticulo , sum(cant) As cant from ( " +
+        "Select idArticulo , sum(cantidad*-1) As cant from Detalle_Venta where idArticulo = '" & art & "' group by IdArticulo " +
+        "UNION ALL Select idArticulo, sum(cantidad) as cant from detalle_Pedido where idArticulo = '" & art & "' group by IdArticulo   " +
+        "UNION ALL Select idArticulo, sum(cantidad) as cant from Correccion_Stock where idArticulo = '" & art & "' group by IdArticulo  " +
+        ") src " +
+        "where src.IdArticulo = '" & art & "' " +
+        "group by src.IdArticulo "
 
         'LAMPA ARMAR LA QUERY
         Dim com As New SqlCommand(query, sqlCon)

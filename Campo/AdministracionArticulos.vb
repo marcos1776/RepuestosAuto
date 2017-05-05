@@ -44,7 +44,16 @@
 
         Label1.Text = dtMensajes.Rows(2).Item(5).ToString
 
+        lblMinimo.Visible = False
+        lblMax.Visible = False
+        lblMargen.Visible = False
 
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        TextBox3.Visible = False
+
+
+        btnModifArtic.Visible = False
 
         cargarDataGrid()
     End Sub
@@ -126,14 +135,14 @@
         lblArticDispon.Visible = False
         Label1.Visible = True
 
-        lblMinimo.Visible = False
-        lblMax.Visible = False
-        lblMargen.Visible = False
-        TextBox1.Visible = False
-        TextBox2.Visible = False
-        TextBox3.Visible = False
+        lblMinimo.Visible = True
+        lblMax.Visible = True
+        lblMargen.Visible = True
+        TextBox1.Visible = True
+        TextBox2.Visible = True
+        TextBox3.Visible = True
 
-        btnModifArtic.Visible = False
+        btnModifArtic.Visible = True
         btnAplicCam.Visible = False
 
         TextBox5.Visible = True
@@ -149,17 +158,19 @@
 
         Label1.Visible = False
         lblArticDispon.Visible = True
-        lblMinimo.Visible = True
-        lblMax.Visible = True
-        lblMargen.Visible = True
 
-        TextBox1.Visible = True
-        TextBox2.Visible = True
-        TextBox3.Visible = True
+        lblMinimo.Visible = False
+        lblMax.Visible = False
+        lblMargen.Visible = False
+
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        TextBox3.Visible = False
+
         TextBox4.Visible = False
         TextBox5.Enabled = True
 
-        btnModifArtic.Visible = True
+        btnModifArtic.Visible = False
 
     End Sub
 
@@ -264,19 +275,19 @@
 
     'Falta Logica de Modificar
     Private Sub btnAplicCam_Click(sender As Object, e As EventArgs) Handles btnAplicCam.Click
-        Dim rowIndex As Integer = DataGridView1.CurrentCell.RowIndex
-        Dim row As DataGridViewRow = DataGridView1.Rows(rowIndex)
+        Dim rowIndex As Integer = DataGridView2.CurrentCell.RowIndex
+        Dim row As DataGridViewRow = DataGridView2.Rows(rowIndex)
         Dim art As New BLL.Articulo
         Dim dvh As Integer
         Dim seg As New BLL.Seguridad("Password")
-        Dim articuloNombre As String = row.Cells(0).Value
+        Dim articuloNombre As String = row.Cells(1).Value
 
         art.ActualizarArticulo(articuloNombre, TextBox1.Text, TextBox2.Text, TextBox3.Text)
         Dim datosArticulo As New DataSet
 
         datosArticulo = art.buscarArticulo(articuloNombre)
 
-        Dim CadenaDVH As String = Trim(datosArticulo.Tables(0).Rows(0).Item(0).ToString) +
+        Dim CadenaDVH As String = Trim(datosArticulo.Tables(3).Rows(0).Item(0).ToString) +
         Trim(datosArticulo.Tables(3).Rows(0).Item(1).ToString) +
         Trim(datosArticulo.Tables(3).Rows(0).Item(2).ToString) +
         Trim(datosArticulo.Tables(3).Rows(0).Item(3).ToString) +
@@ -295,8 +306,26 @@
         '' Calculo DVV
         seg.ActualizarDVV("articulo")
 
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim idBitacora As Integer = seguridad.registrarBitacora(Login.ID_USUARIO, "MEDIA", DateTime.Now, "Se modificaron los datos del articulo", 0)
 
-        'seguridad.registrarBitacora(Login.ID_USUARIO, "MEDIA", DateTime.Now, "Se modificaron los datos del articulo", 0)
+        Dim ds As New DataTable
+        Dim str As String
+        ''''''''''''''''''''''''''''''' Calculo el DVH ''''''''''''''''''''''''''''''' 
+        ds = seguridad.buscarRegistroBitacora(idBitacora)
+        'usuario.BuscarUsuarioEncriptado(idUsuario)
+        str = Trim(ds.Rows(0).Item("IdBitacora").ToString) + Trim(ds.Rows(0).Item("IdUsuario").ToString) + Trim(ds.Rows(0).Item("Criticidad").ToString) + Trim(ds.Rows(0).Item("Fecha").ToString) + Trim(ds.Rows(0).Item("Descripcion").ToString) + ds.Rows(0).Item("DVH").ToString
+
+        dvh = seguridad.calcularDVH(str)
+
+        'usuario.ModificarDVH(idUsuario, dvh, "Usuario", 0)
+        seguridad.ModificarDVH(idBitacora, dvh, "Bitacora", "IdBitacora")
+
+        If Login.ID_IDIOMA = 1 Then
+            MessageBox.Show("Articulo modificado correctamente !")
+        Else
+            MessageBox.Show("Article modified correctly !")
+        End If
 
     End Sub
 

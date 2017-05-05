@@ -89,8 +89,7 @@ Public Class Articulo
         sqlCon.Open()
 
         Dim articulosProveedores As String = "select p.Nombre_Empresa ,a1.idArticulo, Descripcion, Precio from Articulo a1 " +
-        "join proveedor p on a1.Idproveedor = p.IdProveedor"
-
+        "join proveedor p on a1.Idproveedor = p.IdProveedor "
         '     Dim articulosComprados As String = "select d1.idArticulo, a1.Descripcion, a1.stockMinimo, a1.StockMaximo,1 " +
         '     "." +
         '"( " +
@@ -105,7 +104,7 @@ Public Class Articulo
         '     "group by d1.IdArticulo , a1.stockMinimo, a1.stockMaximo, a1.Descripcion, a1.Margen_Ganancia "
 
 
-        Dim articulosComprados As String = "select d1.idArticulo, a1.Descripcion, a1.stockMinimo, a1.StockMaximo " +
+        Dim articulosComprados As String = "select d1.idArticulo, a1.Descripcion, a1.stockMinimo, a1.StockMaximo, " +
         "(100 + a1.Margen_Ganancia)*AVG(a1.Precio) / 100  as Precio from Detalle_Pedido d1 " +
         "join articulo a1 on d1.IdArticulo = a1.IdArticulo " +
         "group by d1.IdArticulo , a1.stockMinimo, a1.stockMaximo, a1.Descripcion, a1.Margen_Ganancia "
@@ -132,7 +131,7 @@ Public Class Articulo
         Dim sqlCon As New SqlConnection(My.Resources.con)
         sqlCon.Open()
 
-        Dim query As String = "Select IdArticulo, Descripcion , StockProveedor, precio from Articulo a1 join Proveedor p1 On p1.IdProveedor = a1.IdProveedor where p1.Nombre_Empresa ='" + s + "'"
+        Dim query As String = "Select IdArticulo, Descripcion , StockProveedor, (100 + Margen_Ganancia)* Precio / 100  as Precio  from Articulo a1 join Proveedor p1 On p1.IdProveedor = a1.IdProveedor where p1.Nombre_Empresa ='" + s + "'"
         Dim com As New SqlCommand(query, sqlCon)
 
         com.CommandType = CommandType.Text

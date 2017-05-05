@@ -241,6 +241,7 @@ Public Class MenuPrincipal
         'Dim CargarStock As New CargarStockAProveedor()
         'CargarStock.Show()
         'CargarStockAProveedor.Show()
+        Dim seguridad As New BLL.Seguridad("Password")
         Dim fd As OpenFileDialog = New OpenFileDialog()
         Dim strFileName As String
 
@@ -256,6 +257,28 @@ Public Class MenuPrincipal
             'TextBox1.Text = strFileName
             Dim prov As New BLL.Proveedor
             prov.cargarArticuloProveedor(strFileName)
+
+
+            Dim idBitacora As Integer = seguridad.registrarBitacora(Login.ID_USUARIO, "MEDIA", DateTime.Now, "Articulos cargados al sistema", 0)
+            Dim ds As New DataTable
+            Dim str As String
+            ''''''''''''''''''''''''''''''' Calculo el DVH ''''''''''''''''''''''''''''''' 
+            ds = seguridad.buscarRegistroBitacora(idBitacora)
+            'usuario.BuscarUsuarioEncriptado(idUsuario)
+            str = Trim(ds.Rows(0).Item("IdBitacora").ToString) + Trim(ds.Rows(0).Item("IdUsuario").ToString) + Trim(ds.Rows(0).Item("Criticidad").ToString) + Trim(ds.Rows(0).Item("Fecha").ToString) + Trim(ds.Rows(0).Item("Descripcion").ToString) + ds.Rows(0).Item("DVH").ToString
+            Dim dvh As Integer
+            dvh = seguridad.calcularDVH(str)
+
+            'usuario.ModificarDVH(idUsuario, dvh, "Usuario", 0)
+            seguridad.ModificarDVH(idBitacora, dvh, "Bitacora", "IdBitacora")
+            '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+            If Login.ID_IDIOMA = 1 Then
+                MessageBox.Show("Articulos cargados correctamente")
+            Else
+                MessageBox.Show("Articles loaded succefully")
+
+            End If
         End If
     End Sub
 

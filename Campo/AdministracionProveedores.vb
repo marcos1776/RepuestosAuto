@@ -292,7 +292,7 @@
 
         ''''''''''''''''''''''''''''''' Calculo el DVH ''''''''''''''''''''''''''''''' 
         Dim str As String
-        datosProveedor = proveedor.buscarProveedor(seguridad.Encriptar(Trim(proveedorNombre)))
+        datosProveedor = proveedor.BuscarProveedorEncriptado(proveedor.idProveedor)
 
 
         ' LAMPA ARREGLAR , TRAE EL DATO ENCRIPTADO
@@ -325,7 +325,7 @@
 
         ''  COMPLETAR --> falta el dvh de direcciones
 
-        For Each dir As DataRow In datosProveedor.Tables("DatosDirecciones").Rows
+        For Each dir As DataRow In datosProveedor.Tables("DatosDireccion").Rows
             str = Trim(proveedor.idProveedor.ToString) + dir.Item("Direccion").ToString
             dvh = seguridad.calcularDVH(str)
             'usuario.ModificarDVH(tel.Item("Telefono").ToString, dvh, "Telefono_Usuario", "IdTelefono")
