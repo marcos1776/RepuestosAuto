@@ -51,6 +51,6 @@
             MessageBox.Show("Client added succesfully")
         End If
 
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

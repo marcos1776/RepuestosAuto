@@ -62,7 +62,8 @@ Public Class Pedido
         Dim stock As Integer
 
         While datar.Read
-            stock = datar.Item("stockProveedor")
+            stock = datar.Item("cant")
+
 
             sqlCon.Close()
             Return stock
@@ -103,7 +104,7 @@ Public Class Pedido
         Dim query As String = "Insert into Pedido (idProveedor , idUsuario, fecha, total, dvh, estado)Values( " +
         "(select idProveedor from proveedor where nombre_Empresa = '" & prov & " '), " &
         idUsuario &
-        ",(select GETDATE()), " & total & ", NULL , 'Pendiente')"
+        ",(select GETDATE()), " & total.ToString.Replace(",", ".") & ", NULL , 'Pendiente')"
 
         Dim query2 As String = "Select @@Identity"
 
@@ -131,7 +132,7 @@ Public Class Pedido
 
     Public Sub AgregarArticulosAPedido(registro As DataRow, idPedido As Integer)
         'Agregar el IdUsuario
-        Dim query As String = "Insert into Detalle_Pedido (idPedido , idArticulo, montoArticulo, Cantidad, DVH)Values( " & idPedido & ", '" & registro.Item("IdArticulo").ToString & "',  " & CDbl(registro.Item("Precio")) & ", " & registro.Item("Cantidad") & ", NULL)"
+        Dim query As String = "Insert into Detalle_Pedido (idPedido , idArticulo, montoArticulo, Cantidad, DVH)Values( " & idPedido & ", '" & registro.Item("IdArticulo").ToString & "',  " & CDbl(registro.Item("Precio")).ToString.Replace(",", ".") & ", " & registro.Item("Cantidad") & ", NULL)"
 
         Dim sqlCon As New SqlConnection(My.Resources.con)
         sqlCon.Open()
@@ -165,19 +166,21 @@ Public Class Pedido
         sqlCon.Close()
     End Sub
 
+
+
+
+
     'Modifico el Pedido , me traigo los datos del proveedor, y el detalle del pedido
     Public Function BuscarPedido(prov As String, idPedido As String) As DataSet
         Dim sqlCon As New SqlConnection(My.Resources.con)
         sqlCon.Open()
 
 
-        Dim detallePedido As String = "Select a1.Descripcion from Detalle_Pedido d1 " +
+        Dim detallePedido As String = "Select a1.IdArticulo, a1.Descripcion, cantidad,MontoArticulo, cantidad * MontoArticulo as SubTotal from Detalle_Pedido d1 " +
         "join articulo a1 On d1.IdArticulo = a1.IdArticulo " +
         "where idPedido = " & idPedido & ""
 
-        Dim articulosProveedores As String = "Select a1.* from articulo a1 " +
-        "join proveedor p1 On a1.IdProveedor = P1.IdProveedor " +
-        "WHERE p1.Nombre_Empresa = '" & prov & "'"
+        Dim articulosProveedores As String = "Select IdArticulo, Descripcion , StockProveedor, (100 + Margen_Ganancia)* Precio / 100  as Precio  from Articulo a1 join Proveedor p1 On p1.IdProveedor = a1.IdProveedor where p1.Nombre_Empresa ='" + prov + "'"
 
         Dim Datos As New DataSet()
 

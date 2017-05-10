@@ -76,25 +76,36 @@
         Dim datosPedido As New DataSet
         Dim rowIndex As Integer = DataGridView1.CurrentCell.RowIndex
         Dim row As DataGridViewRow = DataGridView1.Rows(rowIndex)
+        Dim seguridad As New BLL.Seguridad("Password")
 
         Dim proveedor As String = row.Cells(1).Value
         Dim idPedido As Integer = row.Cells(0).Value
 
         Dim pedido As New BLL.Pedido
 
-        datosPedido = pedido.BuscarPedido(Trim(proveedor), idPedido)
+        datosPedido = pedido.BuscarPedido(seguridad.Encriptar(Trim(proveedor)), idPedido)
 
         Dim modificarPedido As New ModificarPedido
+
+        modificarPedido.proveedor = proveedor
+        modificarPedido.idPedido = idPedido
+
+        'For Each carrito As DataRow In datosPedido.Tables("articulosProveedores").Rows
+        '    modificarPedido.ListBox1.Items.Add(carrito(4).ToString)
+        'Next
+
+
+
+        modificarPedido.DataGridView1.DataSource = datosPedido.Tables("articulosProveedores")
+
+
+        'For Each art As DataRow In datosPedido.Tables("detallePedido").Rows
+        '    modificarPedido.ListBox2.Items.Add(art(0).ToString)
+        'Next
+
+        modificarPedido.DataGridView2.DataSource = datosPedido.Tables("detallePedido")
+
         modificarPedido.Show()
-
-        For Each carrito As DataRow In datosPedido.Tables("articulosProveedores").Rows
-            modificarPedido.ListBox1.Items.Add(carrito(4).ToString)
-        Next
-
-
-        For Each art As DataRow In datosPedido.Tables("detallePedido").Rows
-            modificarPedido.ListBox2.Items.Add(art(0).ToString)
-        Next
     End Sub
 
     'Confirmar Pedidos
@@ -180,6 +191,23 @@
         'Actualizo el DVV 
         seguridad.ActualizarDVV("Pedido")
 
+        seguridad.ActualizarDVV("Detalle_Pedido")
+
+        Dim idBitacora As Integer = seguridad.registrarBitacora(Login.ID_USUARIO, "ALTA", DateTime.Now, "Cancelación de pedido", 0)
+        Dim ds As New DataTable
+        Dim str As String
+        Dim dvh As Integer
+
+        ''''''''''''''''''''''''''''''' Calculo el DVH ''''''''''''''''''''''''''''''' 
+        ds = seguridad.buscarRegistroBitacora(idBitacora)
+        'usuario.BuscarUsuarioEncriptado(idUsuario)
+        Str = Trim(ds.Rows(0).Item("IdBitacora").ToString) + Trim(ds.Rows(0).Item("IdUsuario").ToString) + Trim(ds.Rows(0).Item("Criticidad").ToString) + Trim(ds.Rows(0).Item("Fecha").ToString) + Trim(ds.Rows(0).Item("Descripcion").ToString) + ds.Rows(0).Item("DVH").ToString
+
+        dvh = seguridad.calcularDVH(Str)
+
+        'usuario.ModificarDVH(idUsuario, dvh, "Usuario", 0)
+        seguridad.ModificarDVH(idBitacora, dvh, "Bitacora", "IdBitacora")
+
         cargarDataGrid()
     End Sub
 
@@ -214,13 +242,69 @@
         dvh = seguridad.calcularDVH(str)
         seguridad.ModificarDVH(idPedido, dvh, "Pedido", "idPedido")
 
+        If Login.ID_IDIOMA = 1 Then
+            MessageBox.Show("Pedido confirmado !")
+        Else
+            MessageBox.Show("Order confirmed !")
+        End If
+
         '' Actualizo el dvv
         seguridad.ActualizarDVV("Pedido")
+
+        Dim idBitacora As Integer = seguridad.registrarBitacora(Login.ID_USUARIO, "MEDIA", DateTime.Now, "Pedido Confirmado", 0)
+        Dim ds As New DataTable
+
+
+        ''''''''''''''''''''''''''''''' Calculo el DVH ''''''''''''''''''''''''''''''' 
+        ds = seguridad.buscarRegistroBitacora(idBitacora)
+        'usuario.BuscarUsuarioEncriptado(idUsuario)
+        str = Trim(ds.Rows(0).Item("IdBitacora").ToString) + Trim(ds.Rows(0).Item("IdUsuario").ToString) + Trim(ds.Rows(0).Item("Criticidad").ToString) + Trim(ds.Rows(0).Item("Fecha").ToString) + Trim(ds.Rows(0).Item("Descripcion").ToString) + ds.Rows(0).Item("DVH").ToString
+
+        dvh = seguridad.calcularDVH(str)
+
+        'usuario.ModificarDVH(idUsuario, dvh, "Usuario", 0)
+        seguridad.ModificarDVH(idBitacora, dvh, "Bitacora", "IdBitacora")
+        '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
         cargarDataGrid()
     End Sub
 
+    Private Sub btnConsul_Click(sender As Object, e As EventArgs) Handles btnConsul.Click
+        Dim datosPedido As New DataSet
+        Dim rowIndex As Integer = DataGridView1.CurrentCell.RowIndex
+        Dim row As DataGridViewRow = DataGridView1.Rows(rowIndex)
+        Dim seguridad As New BLL.Seguridad("Password")
 
+        Dim proveedor As String = row.Cells(1).Value
+        Dim idPedido As Integer = row.Cells(0).Value
 
+        Dim pedido As New BLL.Pedido
 
+        datosPedido = pedido.BuscarPedido(seguridad.Encriptar(Trim(proveedor)), idPedido)
+
+        Dim consultarPedido As New ModificarPedido
+
+        consultarPedido.Button2.Hide()
+        consultarPedido.Button5.Hide()
+        consultarPedido.Button3.Hide()
+
+        consultarPedido.TextBox1.Hide()
+        consultarPedido.Label2.Hide()
+        consultarPedido.TextBox3.Hide()
+        consultarPedido.Label4.Hide()
+
+        If Login.ID_IDIOMA = 1 Then
+            consultarPedido.Text = "Consultar Pedido"
+        Else
+            consultarPedido.Text = "Check Order"
+        End If
+
+        consultarPedido.proveedor = proveedor
+        consultarPedido.idPedido = idPedido
+
+        consultarPedido.DataGridView1.DataSource = datosPedido.Tables("articulosProveedores")
+        consultarPedido.DataGridView2.DataSource = datosPedido.Tables("detallePedido")
+
+        consultarPedido.Show()
+    End Sub
 End Class

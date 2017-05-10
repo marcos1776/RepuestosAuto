@@ -42,4 +42,12 @@
 
 
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        ListBox2.Items.Add(ListBox1.SelectedItem)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        ListBox2.Items.RemoveAt(ListBox2.SelectedIndex)
+    End Sub
 End Class

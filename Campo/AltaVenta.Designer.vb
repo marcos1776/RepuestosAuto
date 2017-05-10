@@ -67,10 +67,15 @@ Partial Class AltaVenta
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Precio, Me.Column3})
         Me.DataGridView1.Location = New System.Drawing.Point(9, 120)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(451, 149)
         Me.DataGridView1.TabIndex = 42
         '
@@ -78,21 +83,25 @@ Partial Class AltaVenta
         '
         Me.Column1.HeaderText = "Código"
         Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
         '
         'Column2
         '
         Me.Column2.HeaderText = "Descripcion"
         Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
         '
         'Precio
         '
         Me.Precio.HeaderText = "Precio"
         Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
         '
         'Column3
         '
         Me.Column3.HeaderText = "Accion"
         Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
         '
         'TextBox3
         '
@@ -113,10 +122,15 @@ Partial Class AltaVenta
         '
         'DataGridView2
         '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.AllowUserToResizeRows = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.a, Me.Column4, Me.Column5, Me.Column6, Me.Subtotal, Me.Column8})
         Me.DataGridView2.Location = New System.Drawing.Point(9, 318)
         Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView2.Size = New System.Drawing.Size(451, 135)
         Me.DataGridView2.TabIndex = 50
         '
@@ -295,6 +309,7 @@ Partial Class AltaVenta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(469, 533)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox2)

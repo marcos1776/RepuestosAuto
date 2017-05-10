@@ -151,7 +151,8 @@ Public Class Articulo
         Dim sqlCon As New SqlConnection(My.Resources.con)
         sqlCon.Open()
 
-        Dim query As String = "select a1.IdArticulo, a1.Descripcion, '" + cant.ToString + "' as Cantidad, a1.Precio , (a1.precio * " + cant.ToString + ") as Subtotal " +
+        Dim query As String = "select a1.IdArticulo, a1.Descripcion, '" + cant.ToString + "' as Cantidad, (100 + a1.Margen_Ganancia)* a1.Precio / 100  as Precio , " +
+        "((100 + a1.Margen_Ganancia)* a1.Precio / 100) * " + cant.ToString + " as Subtotal " +
         "from articulo a1 " +
         "join proveedor p1 on a1.IdProveedor = p1.IdProveedor " +
         "where p1.Nombre_Empresa ='" + prov + "' " +

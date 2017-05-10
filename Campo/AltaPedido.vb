@@ -174,11 +174,11 @@ Public Class AltaPedido
 
 
 
-            'seguridad.registrarBitacora(Login.ID_USUARIO, "BAJA", DateTime.Now, "Nuevo pedido", 0)
+            seguridad.registrarBitacora(Login.ID_USUARIO, "BAJA", DateTime.Now, "Nuevo pedido al proveedor " & Proveedor, 0)
 
 
             'Genero el Excel
-            GenerarExcel(Proveedor)
+            pedido.GenerarExcel(Proveedor, Carrito)
             'Envio de mail.
 
             If (Login.ID_IDIOMA = 1) Then
@@ -211,87 +211,7 @@ Public Class AltaPedido
         End If
     End Function
 
-    Public Sub GenerarExcel(prov As String)
-        Dim ExcelFilePath As String
-        Dim ExcelFileDestino As String
-        Dim fecha As New DateTime
-        fecha = DateTime.Now
 
-        ExcelFileDestino = "C:\Users\LampaPc\Desktop\Campo\PedidosProveedores\" + prov + fecha.ToString("dd.MM.yyyy hh.mm") + ".xlsx"
-        'ExcelFilePath = "C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\PedidosProveedores\excelMarcos.xlsx"
-
-        'My.Computer.FileSystem.CopyFile(ExcelFilePath, ExcelFileDestino, True)
-
-        Dim excelApp As New Excel.Application
-        excelApp.Workbooks.Add()
-
-        Dim excelworksheet As New Excel.Worksheet
-        excelworksheet = excelApp.ActiveSheet
-
-        Dim i As Integer
-        Dim j As Integer
-
-        ' -------------- Estilos
-        Dim style As Excel.Style = excelworksheet.Application.ActiveWorkbook.Styles.Add("NewStyle")
-        style.Font.Bold = True
-        style.Interior.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.Green)
-
-
-        ' -------------- Titulo
-        excelworksheet.Range("A1:E2").Merge()
-        excelworksheet.Cells(1, 1) = "Solicitud de Articulos a Proveedor"
-        'excelworksheet.Cells(1, 1).style = "NewStyle"
-        excelworksheet.Range("A1:E2").VerticalAlignment = Excel.Constants.xlCenter
-        excelworksheet.Range("A1:E2").HorizontalAlignment = Excel.Constants.xlCenter
-
-
-        excelworksheet.Range("A1").EntireColumn.ColumnWidth = 14
-        excelworksheet.Range("B1").EntireColumn.ColumnWidth = 28
-        excelworksheet.Range("C1").EntireColumn.ColumnWidth = 12
-        excelworksheet.Range("D1").EntireColumn.ColumnWidth = 12
-        excelworksheet.Range("E1").EntireColumn.ColumnWidth = 12
-
-        ' -------------- Agrego el Proveedor
-        excelworksheet.Range("A3:B3").Merge()
-        excelworksheet.Range("A3").Value = prov
-
-        '-------------- Agrego la fecha
-        excelworksheet.Range("C3:E3").Merge()
-        excelworksheet.Range("C3").Value = fecha
-        excelworksheet.Range("C3").HorizontalAlignment = Excel.Constants.xlRight
-
-
-        '--------------
-        'Agrego las columnas
-        For i = 0 To Carrito.Columns.Count - 1
-            excelworksheet.Cells(4, (i + 1)) = Carrito.Columns(i).ColumnName
-        Next
-
-        'Agrego las rows
-
-        For i = 0 To Carrito.Rows.Count - 1
-
-            For j = 0 To Carrito.Columns.Count - 1
-                excelworksheet.Cells((i + 5), (j + 1)) = Carrito.Rows(i)(j)
-            Next
-
-        Next
-
-        'Genero el excel
-        If (ExcelFileDestino IsNot Nothing And ExcelFileDestino IsNot "") Then
-            Try
-                excelworksheet.SaveAs(ExcelFileDestino)
-                excelApp.Quit()
-                MessageBox.Show("Archivo generado con exito!")
-            Catch ex As Exception
-                Throw New Exception("Archivo no generado, verificar la ruta \n" + ex.Message)
-            End Try
-        Else
-            excelApp.Visible = True
-        End If
-
-
-    End Sub
 
     'Añadir al carro
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick

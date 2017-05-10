@@ -31,7 +31,7 @@
             MessageBox.Show("User added correctly")
         End If
 
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub AltaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
