@@ -354,10 +354,10 @@
     <Compile Include="ModificarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarVenta2.Designer.vb">
-      <DependentUpon>ModificarVenta2.vb</DependentUpon>
+    <Compile Include="ModificarVenta.Designer.vb">
+      <DependentUpon>ModificarVenta.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarVenta2.vb">
+    <Compile Include="ModificarVenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -561,8 +561,8 @@
     <EmbeddedResource Include="ModificarUsuario.resx">
       <DependentUpon>ModificarUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarVenta2.resx">
-      <DependentUpon>ModificarVenta2.vb</DependentUpon>
+    <EmbeddedResource Include="ModificarVenta.resx">
+      <DependentUpon>ModificarVenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
