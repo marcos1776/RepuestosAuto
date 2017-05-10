@@ -18,23 +18,42 @@
                 Dim nuevaContraseña As String = seguridad.EncriptarPassword(TextBox2.Text)
                 seguridad.ModificarContraseña(Login.ID_USUARIO, nuevaContraseña)
 
-                MsgBox("Contraseña actualizada correctamente")
-            Else
-                MsgBox("La contraseña no coincide")
-            End If
 
+                If Login.ID_IDIOMA = 1 Then
+                    MessageBox.Show("Contraseña actualizada correctamente")
+                Else
+                    MessageBox.Show("Password changed succesfully")
+                End If
+            Else
+                If Login.ID_IDIOMA = 1 Then
+                    MessageBox.Show("La contraseña insertada no es correcta")
+                Else
+                    MessageBox.Show("You have not entered the correct password.")
+                End If
+            End If
         End If
 
+        'LAMPA ACTUALIZAR DVH Y DVV
+
+        'BITACORA
 
     End Sub
 
     Private Function validarConsistencia() As Boolean
         If TextBox3.Text = "" Or TextBox2.Text = "" Or TextBox1.Text = "" Then
-            MsgBox("Complete los campos")
+            If Login.ID_IDIOMA = 1 Then
+                MessageBox.Show("Por favor complete los campos")
+            Else
+                MessageBox.Show("Please complete blank fields.")
+            End If
             Return False
 
             If TextBox2.Text <> TextBox3.Text Then
-                MsgBox("Las nuevas contraseñas no coinciden")
+                If Login.ID_IDIOMA = 1 Then
+                    MessageBox.Show("Las nuevas contraseñas no coinciden")
+                Else
+                    MessageBox.Show("Please complete blank fields.")
+                End If
                 Return False
             End If
         Else

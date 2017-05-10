@@ -167,26 +167,26 @@ Partial Class MenuPrincipal
         '
         Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarPedidosToolStripMenuItem, Me.NuevoPedidoToolStripMenuItem})
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(74, 24)
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(73, 24)
         Me.ComprasToolStripMenuItem.Text = "Pedidos"
         '
         'AdministrarPedidosToolStripMenuItem
         '
         Me.AdministrarPedidosToolStripMenuItem.Name = "AdministrarPedidosToolStripMenuItem"
-        Me.AdministrarPedidosToolStripMenuItem.Size = New System.Drawing.Size(212, 24)
+        Me.AdministrarPedidosToolStripMenuItem.Size = New System.Drawing.Size(211, 24)
         Me.AdministrarPedidosToolStripMenuItem.Text = "Administrar Pedidos"
         '
         'NuevoPedidoToolStripMenuItem
         '
         Me.NuevoPedidoToolStripMenuItem.Name = "NuevoPedidoToolStripMenuItem"
-        Me.NuevoPedidoToolStripMenuItem.Size = New System.Drawing.Size(212, 24)
+        Me.NuevoPedidoToolStripMenuItem.Size = New System.Drawing.Size(211, 24)
         Me.NuevoPedidoToolStripMenuItem.Text = "Nuevo Pedido"
         '
         'VentaToolStripMenuItem
         '
         Me.VentaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarVentasToolStripMenuItem, Me.NuevaVentaToolStripMenuItem, Me.AdministrarPresupuestoToolStripMenuItem, Me.NuevoPresupuestoToolStripMenuItem})
         Me.VentaToolStripMenuItem.Name = "VentaToolStripMenuItem"
-        Me.VentaToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
+        Me.VentaToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
         Me.VentaToolStripMenuItem.Text = "Ventas"
         '
         'AdministrarVentasToolStripMenuItem
@@ -223,37 +223,37 @@ Partial Class MenuPrincipal
         'ReporteVentasToolStripMenuItem
         '
         Me.ReporteVentasToolStripMenuItem.Name = "ReporteVentasToolStripMenuItem"
-        Me.ReporteVentasToolStripMenuItem.Size = New System.Drawing.Size(290, 24)
+        Me.ReporteVentasToolStripMenuItem.Size = New System.Drawing.Size(289, 24)
         Me.ReporteVentasToolStripMenuItem.Text = "Reporte Listado Ventas"
         '
         'ReporteVentaSimpleToolStripMenuItem
         '
         Me.ReporteVentaSimpleToolStripMenuItem.Name = "ReporteVentaSimpleToolStripMenuItem"
-        Me.ReporteVentaSimpleToolStripMenuItem.Size = New System.Drawing.Size(290, 24)
+        Me.ReporteVentaSimpleToolStripMenuItem.Size = New System.Drawing.Size(289, 24)
         Me.ReporteVentaSimpleToolStripMenuItem.Text = "Reporte Venta Específica"
         '
         'ReporteListadoComprasToolStripMenuItem
         '
         Me.ReporteListadoComprasToolStripMenuItem.Name = "ReporteListadoComprasToolStripMenuItem"
-        Me.ReporteListadoComprasToolStripMenuItem.Size = New System.Drawing.Size(290, 24)
+        Me.ReporteListadoComprasToolStripMenuItem.Size = New System.Drawing.Size(289, 24)
         Me.ReporteListadoComprasToolStripMenuItem.Text = "Reporte Listado Pedidos"
         '
         'ReportePedidoEspecificoToolStripMenuItem
         '
         Me.ReportePedidoEspecificoToolStripMenuItem.Name = "ReportePedidoEspecificoToolStripMenuItem"
-        Me.ReportePedidoEspecificoToolStripMenuItem.Size = New System.Drawing.Size(290, 24)
+        Me.ReportePedidoEspecificoToolStripMenuItem.Size = New System.Drawing.Size(289, 24)
         Me.ReportePedidoEspecificoToolStripMenuItem.Text = "Reporte Pedido Especifico"
         '
         'ReporteUsuariosToolStripMenuItem
         '
         Me.ReporteUsuariosToolStripMenuItem.Name = "ReporteUsuariosToolStripMenuItem"
-        Me.ReporteUsuariosToolStripMenuItem.Size = New System.Drawing.Size(290, 24)
+        Me.ReporteUsuariosToolStripMenuItem.Size = New System.Drawing.Size(289, 24)
         Me.ReporteUsuariosToolStripMenuItem.Text = "Reporte Usuarios"
         '
         'ReporteArticulosMásVendidosToolStripMenuItem
         '
         Me.ReporteArticulosMásVendidosToolStripMenuItem.Name = "ReporteArticulosMásVendidosToolStripMenuItem"
-        Me.ReporteArticulosMásVendidosToolStripMenuItem.Size = New System.Drawing.Size(290, 24)
+        Me.ReporteArticulosMásVendidosToolStripMenuItem.Size = New System.Drawing.Size(289, 24)
         Me.ReporteArticulosMásVendidosToolStripMenuItem.Text = "Reporte Artículos Más Vendidos"
         '
         'UtilidadesToolStripMenuItem
@@ -304,13 +304,13 @@ Partial Class MenuPrincipal
         'CrearFamiliaToolStripMenuItem
         '
         Me.CrearFamiliaToolStripMenuItem.Name = "CrearFamiliaToolStripMenuItem"
-        Me.CrearFamiliaToolStripMenuItem.Size = New System.Drawing.Size(295, 24)
+        Me.CrearFamiliaToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
         Me.CrearFamiliaToolStripMenuItem.Text = "Administrar Familias de patentes"
         '
         'AsignarPatentesToolStripMenuItem1
         '
         Me.AsignarPatentesToolStripMenuItem1.Name = "AsignarPatentesToolStripMenuItem1"
-        Me.AsignarPatentesToolStripMenuItem1.Size = New System.Drawing.Size(295, 24)
+        Me.AsignarPatentesToolStripMenuItem1.Size = New System.Drawing.Size(294, 24)
         Me.AsignarPatentesToolStripMenuItem1.Text = "Asignar Patentes"
         '
         'ContextMenuStrip1
@@ -331,14 +331,14 @@ Partial Class MenuPrincipal
         '
         Me.ToolStripStatusLabel2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(433, 17)
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(449, 17)
         Me.ToolStripStatusLabel2.Spring = True
         '
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(433, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(449, 17)
         Me.ToolStripStatusLabel1.Spring = True
         '
         'Timer1

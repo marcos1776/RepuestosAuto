@@ -1,6 +1,7 @@
 ﻿Public Class ModificarVenta
     Public nombreComprador As String
     Dim Carrito As New DataTable
+    Dim idVenta As Integer
     Private Sub ModificarVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dtMensajes As New DataTable
         Dim seguridad As New BLL.Seguridad("Passowrd")
@@ -8,9 +9,9 @@
         dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 14)
 
         If (Login.ID_IDIOMA = 1) Then
-            Me.Text = "Nueva Venta"
+            Me.Text = "Modificar Venta"
         Else
-            Me.Text = "New sale"
+            Me.Text = "Modify sale"
         End If
 
         lblCliente.Text = dtMensajes.Rows(0).Item(5).ToString
@@ -135,6 +136,12 @@
 
     'Cuando modifico la venta
     Private Sub btnNuev_Click(sender As Object, e As EventArgs) Handles btnNuev.Click
+        'Borro la venta anterior cabecera y detalle
+
+        'Añado la nueva cabecera  y el  carro de venta 
+
+
+
 
     End Sub
 End Class

@@ -301,4 +301,8 @@ Public Class MenuPrincipal
     Private Sub ActualizarHora(sender As Object, e As EventArgs) Handles Timer1.Tick
         ToolStripStatusLabel1.Text = DateTime.Now.ToLongTimeString()
     End Sub
+
+    Private Sub CorregirStockToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CorregirStockToolStripMenuItem.Click
+
+    End Sub
 End Class
