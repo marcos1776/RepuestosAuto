@@ -59,7 +59,7 @@ Partial Class AdministrarVentas
         '
         Me.btnCancel.BackColor = System.Drawing.Color.LightSalmon
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(739, 440)
+        Me.btnCancel.Location = New System.Drawing.Point(739, 496)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 51
@@ -89,7 +89,7 @@ Partial Class AdministrarVentas
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(7, 317)
+        Me.DataGridView2.Location = New System.Drawing.Point(7, 384)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(629, 135)
         Me.DataGridView2.TabIndex = 47
@@ -98,7 +98,7 @@ Partial Class AdministrarVentas
         '
         Me.lblVentasCancel.AutoSize = True
         Me.lblVentasCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVentasCancel.Location = New System.Drawing.Point(4, 296)
+        Me.lblVentasCancel.Location = New System.Drawing.Point(7, 347)
         Me.lblVentasCancel.Name = "lblVentasCancel"
         Me.lblVentasCancel.Size = New System.Drawing.Size(129, 15)
         Me.lblVentasCancel.TabIndex = 46
@@ -109,7 +109,7 @@ Partial Class AdministrarVentas
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(7, 146)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(629, 135)
+        Me.DataGridView1.Size = New System.Drawing.Size(629, 198)
         Me.DataGridView1.TabIndex = 44
         '
         'lblBuscarDesde
@@ -223,7 +223,7 @@ Partial Class AdministrarVentas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(814, 475)
+        Me.ClientSize = New System.Drawing.Size(814, 531)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnConsul)

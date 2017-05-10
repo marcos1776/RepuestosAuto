@@ -110,8 +110,6 @@ Public Class Venta
 
         sqlCon.Close()
 
-
-
         Return Datos
     End Function
 

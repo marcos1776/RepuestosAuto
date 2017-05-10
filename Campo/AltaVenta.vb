@@ -63,12 +63,27 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        Me.Hide()
+        Me.Close()
         TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
         DataGridView2.DataSource = Nothing
         MenuPrincipal.Show()
+    End Sub
+
+    'Quitar del carro
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+        Dim senderGrid = DirectCast(sender, DataGridView)
+        If TypeOf senderGrid.Columns(e.ColumnIndex) Is DataGridViewButtonColumn AndAlso e.RowIndex >= 0 Then
+            Dim art As New BLL.Articulo
+            Dim rowIndex As Integer = DataGridView2.CurrentCell.RowIndex
+            Dim rows As DataGridViewRow = DataGridView2.Rows(rowIndex)
+            'DataGridView1.Rows.Insert(rowIndex)
+
+
+            DataGridView2.Rows.RemoveAt(rowIndex)
+            'Label6.Text = DataGridView2.Rows.Cast(Of DataGridViewRow)().Sum(Function(x) Convert.ToDouble(x.Cells("SubTotal").Value))
+        End If
     End Sub
 
     Public Sub cargarDataGrid()
@@ -92,7 +107,7 @@
         btn.UseColumnTextForButtonValue = True
 
         For Each row As DataRow In articulosComprados.Rows
-            DataGridView1.Rows.Add(row.Item(0).ToString, row.Item(1).ToString, row.Item(5).ToString, btn.Text)
+            DataGridView1.Rows.Add(row.Item(0).ToString, row.Item(1).ToString, row.Item(3).ToString, btn.Text)
         Next
     End Sub
 

@@ -1,9 +1,5 @@
 ﻿Public Class AdministrarVentas
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
     Private Sub AdministrarVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim seg As New BLL.Seguridad("Password")
         Dim dtMensajes As New DataTable
@@ -26,6 +22,8 @@
         btnConsul.Text = dtMensajes.Rows(8).Item(5).ToString
         btnCancelVenta.Text = dtMensajes.Rows(9).Item(5).ToString
         btnCancel.Text = dtMensajes.Rows(10).Item(5).ToString
+
+        cargarGrid()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -37,6 +35,18 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnNueva.Click
         Dim venta As New AltaVenta
         venta.Show()
+    End Sub
+
+
+    Private Sub cargarGrid()
+        Dim venta As New BLL.Venta
+        Dim dt As New DataTable
+
+        'dt = venta.ObtenerVentas
+        'DataGridView1.DataSource = dt
+
+
+
     End Sub
 
 

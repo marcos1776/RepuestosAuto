@@ -1,7 +1,7 @@
 ﻿Public Class ModificarContraseña
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.Hide()
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 
