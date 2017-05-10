@@ -39,6 +39,8 @@
         venta.Show()
     End Sub
 
+
+    'Modificar Venta
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnModif.Click
 
     End Sub

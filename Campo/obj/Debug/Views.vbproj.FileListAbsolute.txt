@@ -709,3 +709,7 @@ C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\Campo.UsuarioPatente.resources
 C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\Views.vbproj.GenerateResource.Cache
 C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\RdlCompile.cache
 C:\Users\LampaPc\Desktop\Github\Campo\obj\Debug\RdlCompile.compiled
+C:\Users\Navegador\Desktop\Github\Campo\bin\Debug\Campo.exe.config
+C:\Users\Navegador\Desktop\Github\Campo\obj\Debug\Campo.exe
+C:\Users\Navegador\Desktop\Github\Campo\obj\Debug\Campo.xml
+C:\Users\Navegador\Desktop\Github\Campo\obj\Debug\Campo.pdb
