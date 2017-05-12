@@ -75,22 +75,31 @@ Partial Class Administrar_Articulos
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 129)
+        Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(375, 390)
+        Me.DataGridView1.Size = New System.Drawing.Size(648, 390)
         Me.DataGridView1.TabIndex = 53
         '
         'DataGridView2
         '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.AllowUserToResizeColumns = False
+        Me.DataGridView2.AllowUserToResizeRows = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Location = New System.Drawing.Point(12, 129)
+        Me.DataGridView2.MultiSelect = False
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView2.Size = New System.Drawing.Size(375, 390)
+        Me.DataGridView2.Size = New System.Drawing.Size(648, 390)
         Me.DataGridView2.TabIndex = 57
         Me.DataGridView2.Visible = False
         '
@@ -135,7 +144,7 @@ Partial Class Administrar_Articulos
         'btnArticulosProv
         '
         Me.btnArticulosProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnArticulosProv.Location = New System.Drawing.Point(492, 12)
+        Me.btnArticulosProv.Location = New System.Drawing.Point(680, 13)
         Me.btnArticulosProv.Name = "btnArticulosProv"
         Me.btnArticulosProv.Size = New System.Drawing.Size(143, 43)
         Me.btnArticulosProv.TabIndex = 59
@@ -245,7 +254,7 @@ Partial Class Administrar_Articulos
         '
         Me.btnCancelar.BackColor = System.Drawing.Color.LightSalmon
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(657, 525)
+        Me.btnCancelar.Location = New System.Drawing.Point(906, 525)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 72
@@ -275,7 +284,7 @@ Partial Class Administrar_Articulos
         Me.GroupBox1.Controls.Add(Me.lblMax)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.lblMargen)
-        Me.GroupBox1.Location = New System.Drawing.Point(419, 99)
+        Me.GroupBox1.Location = New System.Drawing.Point(680, 99)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(301, 420)
         Me.GroupBox1.TabIndex = 74
@@ -286,7 +295,7 @@ Partial Class Administrar_Articulos
         Me.lblDatosArticulos.AutoSize = True
         Me.lblDatosArticulos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
         Me.lblDatosArticulos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblDatosArticulos.Location = New System.Drawing.Point(416, 81)
+        Me.lblDatosArticulos.Location = New System.Drawing.Point(680, 79)
         Me.lblDatosArticulos.Name = "lblDatosArticulos"
         Me.lblDatosArticulos.Size = New System.Drawing.Size(103, 15)
         Me.lblDatosArticulos.TabIndex = 75
@@ -297,7 +306,7 @@ Partial Class Administrar_Articulos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(732, 547)
+        Me.ClientSize = New System.Drawing.Size(995, 547)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblDatosArticulos)
         Me.Controls.Add(Me.GroupBox1)

@@ -5,6 +5,7 @@ Public Class MenuPrincipal
     Public altaVe As New AltaVenta
 
 
+
     Private Sub AdministrarUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarUsuarioToolStripMenuItem.Click
         Dim admin As New AdministracionUsuarios
         admin.btnModificar.Enabled = False

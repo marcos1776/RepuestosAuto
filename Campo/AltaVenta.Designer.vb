@@ -138,31 +138,37 @@ Partial Class AltaVenta
         '
         Me.a.HeaderText = "Código"
         Me.a.Name = "a"
+        Me.a.ReadOnly = True
         '
         'Column4
         '
         Me.Column4.HeaderText = "Descripcion"
         Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
         '
         'Column5
         '
         Me.Column5.HeaderText = "Precio"
         Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
         '
         'Column6
         '
         Me.Column6.HeaderText = "Cantidad"
         Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
         '
         'Subtotal
         '
         Me.Subtotal.HeaderText = "Subtotal"
         Me.Subtotal.Name = "Subtotal"
+        Me.Subtotal.ReadOnly = True
         '
         'Column8
         '
         Me.Column8.HeaderText = "Accion"
         Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
         '
         'lblCant
         '
@@ -191,7 +197,7 @@ Partial Class AltaVenta
         Me.btnNuev.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNuev.Location = New System.Drawing.Point(9, 478)
         Me.btnNuev.Name = "btnNuev"
-        Me.btnNuev.Size = New System.Drawing.Size(91, 45)
+        Me.btnNuev.Size = New System.Drawing.Size(99, 45)
         Me.btnNuev.TabIndex = 58
         Me.btnNuev.Text = "Nueva Venta"
         Me.btnNuev.UseVisualStyleBackColor = False

@@ -131,7 +131,7 @@ Public Class Seguridad
 
     Public Function RegitrarBitacora(ID_USUARIO As Integer, tipo As String, hoy As DateTime, desc As String, dvh As Integer) As Integer
         Dim idBitacora As Integer
-        Dim queryInsert As String = "Insert  into Bitacora ( IdUsuario, Criticidad, Fecha, descripcion, DVH) values (" & ID_USUARIO & ",'" + tipo + "','" + hoy.ToString("MM/dd/yyyy hh:mm") + "','" + desc + "'" + ",0)"
+        Dim queryInsert As String = "Insert  into Bitacora ( IdUsuario, Criticidad, Fecha, descripcion, DVH) values (" & ID_USUARIO & ",'" + tipo + "','" + hoy.ToString("MM/dd/yyyy HH:mm") + "','" + desc + "'" + ",0)"
         Dim query2 As String = "Select @@Identity"
 
         Dim sqlCon As New SqlConnection(My.Resources.con)

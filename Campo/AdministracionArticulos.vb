@@ -175,13 +175,13 @@
     End Sub
 
     'Cuando cambio el articulo del primer grid de mis articulos
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellClick
         ListBox1.Items.Clear()
         Dim datosArticulos As New DataSet
-        Dim rowIndex As Integer = DataGridView1.CurrentCell.RowIndex
-        Dim row As DataGridViewRow = DataGridView1.Rows(rowIndex)
+        Dim rowIndex As Integer = DataGridView2.CurrentCell.RowIndex
+        Dim row As DataGridViewRow = DataGridView2.Rows(rowIndex)
 
-        Dim idArt As String = row.Cells(0).Value
+        Dim idArt As String = row.Cells(1).Value
         Dim articulo As New BLL.Articulo
 
 
@@ -210,13 +210,13 @@
 
 
     'Cuando cambio el articulo del segundo grid
-    Private Sub DataGridView2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellClick
+    Private Sub DataGridView2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         ListBox1.Items.Clear()
         Dim datosArticulos As New DataSet
-        Dim rowIndex As Integer = DataGridView2.CurrentCell.RowIndex
-        Dim row As DataGridViewRow = DataGridView2.Rows(rowIndex)
+        Dim rowIndex As Integer = DataGridView1.CurrentCell.RowIndex
+        Dim row As DataGridViewRow = DataGridView1.Rows(rowIndex)
 
-        Dim idArt As String = row.Cells(1).Value
+        Dim idArt As String = row.Cells(0).Value
         Dim articulo As New BLL.Articulo
 
 

@@ -8,6 +8,7 @@
     'Modificar contraseña
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim seguridad As New BLL.Seguridad("Password")
+        Dim usuario As New BLL.Administrador
         'Que compruebe que los campos no sean blancos
         Dim contraseñaAnterior As String
         contraseñaAnterior = seguridad.EncriptarPassword(TextBox1.Text)
@@ -18,6 +19,23 @@
                 Dim nuevaContraseña As String = seguridad.EncriptarPassword(TextBox2.Text)
                 seguridad.ModificarContraseña(Login.ID_USUARIO, nuevaContraseña)
 
+
+                'Busco usuario y Calculo DVH Usuarios
+                Dim us As DataSet
+                Dim str As String
+
+                ''''''''''''''''''''''''''''''' Calculo el DVH ''''''''''''''''''''''''''''''' 
+                us = usuario.BuscarUsuarioEncriptado(Login.ID_USUARIO)
+                str = Trim(us.Tables("DatosUsuario").Rows(0).Item("IdUsuario").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Nombre").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Apellido").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Nick").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Contraseña").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Domicilio").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Mail").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("Dni").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("EsActivo").ToString) + Trim(us.Tables("DatosUsuario").Rows(0).Item("LoginFallos").ToString)
+                Dim dvh As Integer
+                dvh = seguridad.calcularDVH(str)
+
+                'usuario.ModificarDVH(idUsuario, dvh, "Usuario", 0)
+                seguridad.ModificarDVH(Login.ID_USUARIO.ToString, dvh, "Usuario", "IdUsuario")
+                '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+                seguridad.registrarBitacora(Login.ID_USUARIO, "MEDIA", DateTime.Now, "Contraseña modificada manualmente", 0)
 
                 If Login.ID_IDIOMA = 1 Then
                     MessageBox.Show("Contraseña actualizada correctamente")
@@ -33,9 +51,8 @@
             End If
         End If
 
-        'LAMPA ACTUALIZAR DVH Y DVV
 
-        'BITACORA
+
 
     End Sub
 

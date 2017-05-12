@@ -152,26 +152,31 @@ Partial Class AltaPedido
         '
         Me.IdArticulo.HeaderText = "IdArticulo"
         Me.IdArticulo.Name = "IdArticulo"
+        Me.IdArticulo.ReadOnly = True
         '
         'Descripcion
         '
         Me.Descripcion.HeaderText = "Descripcion"
         Me.Descripcion.Name = "Descripcion"
+        Me.Descripcion.ReadOnly = True
         '
         'StockProveedor
         '
         Me.StockProveedor.HeaderText = "Stock Proveedor"
         Me.StockProveedor.Name = "StockProveedor"
+        Me.StockProveedor.ReadOnly = True
         '
         'Precio
         '
         Me.Precio.HeaderText = "Precio"
         Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
         '
         'Acciones
         '
         Me.Acciones.HeaderText = "Acciones"
         Me.Acciones.Name = "Acciones"
+        Me.Acciones.ReadOnly = True
         Me.Acciones.Text = "Insertar"
         '
         'DataGridView2
@@ -240,6 +245,7 @@ Partial Class AltaPedido
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(578, 569)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.DataGridView2)

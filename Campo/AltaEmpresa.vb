@@ -6,7 +6,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim cliente As New BLL.Cliente()
         Dim idCliente As Integer
-        idCliente = cliente.altaCliente("", "", "")
+        idCliente = cliente.altaCliente(TextBox4.Text, TextBox3.Text, TextBox5.Text)
         Dim ds As New DataTable
         Dim seguridad As New BLL.Seguridad("Password")
 
@@ -53,4 +53,6 @@
 
         Me.Close()
     End Sub
+
+
 End Class

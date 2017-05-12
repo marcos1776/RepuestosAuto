@@ -9,7 +9,7 @@
 
     'Boton Cancelar
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
-        Me.Hide()
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 

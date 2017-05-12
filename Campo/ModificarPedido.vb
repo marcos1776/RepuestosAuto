@@ -62,11 +62,17 @@
                 btn.UseColumnTextForButtonValue = True
 
                 Dim dt2 As DataTable = DirectCast(DataGridView2.DataSource, DataTable)
-                For Each row As DataRow In dt2.Rows
-                    DataGridView2.Rows.Add(row.Item(0).ToString, row.Item(1).ToString, row.Item(2).ToString, row.Item(3).ToString, row.Item(4).ToString)
-                Next
+                Dim row As DataRow = dt2.NewRow()
 
-                'DataGridView2.DataSource = Carrito
+                row.Item(0) = dt.Rows(0).Item(0).ToString
+                row.Item(1) = dt.Rows(0).Item(1).ToString
+                row.Item(2) = dt.Rows(0).Item(2).ToString
+                row.Item(3) = dt.Rows(0).Item(3).ToString
+                row.Item(4) = dt.Rows(0).Item(4).ToString
+
+                dt2.Rows.Add(row)
+
+                DataGridView2.DataSource = dt2
             Else
                 If Login.ID_IDIOMA = 1 Then
                     MessageBox.Show("Se ha superado el Stock Maximo permitido")
