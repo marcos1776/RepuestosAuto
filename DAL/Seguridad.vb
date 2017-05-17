@@ -751,7 +751,7 @@ Public Class Seguridad
         Dim num As Integer
         Dim CadenaRestore As String = Replace(My.Resources.con, "campo", "master")
 
-        Dim com As New SqlCommand(queryFam, sqlCon)
+        'Dim com As New SqlCommand(queryFam, sqlCon)
 
         com.CommandText = SP
         'cn.ConnectionString = CadenaRestore
