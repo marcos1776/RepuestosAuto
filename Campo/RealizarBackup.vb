@@ -3,12 +3,12 @@
 Public Class RealizarBackup
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.Hide()
-        MenuPrincipal.Show()
+        Me.Close()
+        'MenuPrincipal.Show()
     End Sub
 
 
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs)
         Label1.Visible = True
         'Label2.Visible = True
         TextBox3.Visible = True
@@ -17,13 +17,14 @@ Public Class RealizarBackup
     End Sub
 
     Private Sub RealizarBackup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedDialog
         Label1.Visible = False
         'Label2.Visible = False
         TextBox3.Visible = False
         'ComboBox1.Visible = False
     End Sub
 
-    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs)
         Label1.Visible = False
         'Label2.Visible = False
         TextBox3.Visible = False
@@ -70,28 +71,46 @@ Public Class RealizarBackup
         Dim tamañoFile As Double
         Dim cantPartes As Integer
 
-        tamañoFile = fichero.Length
+        'tamañoFile = fichero.Length
+
+        Dim idBitacora As Integer = seg.registrarBitacora(Login.ID_USUARIO, "Media", DateTime.Now, "Backup realizado correctamente", 0)
 
 
         ' Backup por partes
         If RadioButton1.Checked Then
             cantPartes = TextBox3.Text
             If seg.RealizarBackUpPorPartes(cantPartes, TextBox1.Text, TextBox2.Text & " ") Then
-                MessageBox.Show("Back up realizado correctamente")
-                'seg.registrarBitacora()
-
+                If Login.ID_IDIOMA = 1 Then
+                    MessageBox.Show("Backup realizado correctamente")
+                Else
+                    MessageBox.Show("Backup done succesfully")
+                End If
             Else
-                MessageBox.Show("Error al realizar backup")
-                'seg.registrarBitacora()
+                If Login.ID_IDIOMA = 1 Then
+                    MessageBox.Show("Error al realizar backup")
+                Else
+                    MessageBox.Show("Error doing the backup. Please retry")
+                End If
+
+
             End If
         Else
             'Back up completo
-            'If seg.RealizarBackUp(txtDestino.Text, txtNombre.Text & " ") Then
+            If seg.RealizarBackUp(TextBox1.Text, TextBox2.Text & " ") Then
 
-            'End If
+            End If
         End If
 
 
+    End Sub
 
+    Private Sub RadioButton2_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        Label1.Visible = False
+        TextBox3.Visible = False
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        Label1.Visible = True
+        TextBox3.Visible = True
     End Sub
 End Class

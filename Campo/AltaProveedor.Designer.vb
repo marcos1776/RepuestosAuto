@@ -277,6 +277,7 @@ Partial Class AltaProveedor
         Me.Controls.Add(Me.btnAñadirTel)
         Me.Controls.Add(Me.lblTelefonos)
         Me.Name = "AltaProveedor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nuevo Proveedor"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

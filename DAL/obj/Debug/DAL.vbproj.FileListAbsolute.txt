@@ -80,7 +80,6 @@ C:\Users\LampaPc\Desktop\Campo 29.04.2017 - copia\DAL\obj\Debug\DAL.pdb
 C:\Users\LampaPc\Desktop\Github\DAL\bin\Debug\DAL.dll
 C:\Users\LampaPc\Desktop\Github\DAL\bin\Debug\DAL.pdb
 C:\Users\LampaPc\Desktop\Github\DAL\bin\Debug\DAL.xml
-C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
 C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.Resources.resources
 C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
 C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.dll

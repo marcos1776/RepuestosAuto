@@ -1086,8 +1086,8 @@ Public Class Seguridad
         Dim seguridad As New DAL.Seguridad
         Dim consulta As String
         Dim cArmado As String = ""
-        cArmado = destino.ToString & "\" & nombre.ToString & " " & Format(Now(), "dd-MM-yyy hh_mm_ss") & "hs.bak"
-        consulta = " exec spBackUpSimple '" & cArmado & "'"
+        cArmado = destino.ToString & "\" & nombre.ToString & " " & Format(Now(), "dd-MM-yyy HH_mm_ss") & "hs.bak"
+        consulta = " exec SP_BackUp '" & cArmado & "'"
 
         If seguridad.EjecutarStoreProcedure(consulta) Then
             Return True
@@ -1100,6 +1100,11 @@ Public Class Seguridad
         Dim seg As New DAL.Seguridad
 
         Dim SP As String
+
+        SP = "Alter database campo set offline with rollback immediate"
+        seg.EjecutarConsultaRestore(SP)
+
+
         SP = "exec SP_Restore '" & path & "'"
 
         If seg.EjecutarStoreProcedure(SP) Then

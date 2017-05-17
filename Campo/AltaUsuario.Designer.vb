@@ -271,6 +271,7 @@ Partial Class AltaUsuario
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.lblTelefonos)
         Me.Name = "AltaUsuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nuevo Usuario"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

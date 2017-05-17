@@ -31,8 +31,11 @@ Partial Class Reporte
         Me.SP_CompraEspecificaTableAdapter = New Campo.CompraUnitariaTableAdapters.SP_CompraEspecificaTableAdapter()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.SP_CompraEspecificaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CompraUnitaria, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'SP_CompraEspecificaBindingSource
@@ -49,7 +52,7 @@ Partial Class Reporte
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(129, 19)
+        Me.Label1.Location = New System.Drawing.Point(118, 31)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 20)
         Me.Label1.TabIndex = 1
@@ -57,13 +60,14 @@ Partial Class Reporte
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.LimeGreen
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(400, 16)
+        Me.Button1.Location = New System.Drawing.Point(369, 19)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(139, 23)
+        Me.Button1.Size = New System.Drawing.Size(116, 43)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Generar Reporte"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'SP_CompraEspecificaTableAdapter
         '
@@ -75,33 +79,60 @@ Partial Class Reporte
         ReportDataSource1.Value = Me.SP_CompraEspecificaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Campo.PedidoEspecifico.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(1, 69)
+        Me.ReportViewer1.Location = New System.Drawing.Point(23, 101)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(741, 399)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1182, 553)
         Me.ReportViewer1.TabIndex = 5
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(258, 19)
+        Me.TextBox1.Location = New System.Drawing.Point(247, 31)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 6
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Location = New System.Drawing.Point(257, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(671, 74)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.LightSalmon
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(512, 19)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(116, 43)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Cancelar"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Reporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(742, 480)
-        Me.Controls.Add(Me.TextBox1)
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1232, 681)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ReportViewer1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
         Me.Name = "Reporte"
-        Me.Text = "Reporte Usuarios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Reporte Pedido Específico"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.SP_CompraEspecificaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CompraUnitaria, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As Label
@@ -111,4 +142,6 @@ Partial Class Reporte
     Friend WithEvents SP_CompraEspecificaTableAdapter As CompraUnitariaTableAdapters.SP_CompraEspecificaTableAdapter
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button2 As Button
 End Class

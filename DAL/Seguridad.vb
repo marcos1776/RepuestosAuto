@@ -696,21 +696,31 @@ Public Class Seguridad
             Dim da As New SqlDataAdapter
             Dim ds As New DataSet
 
-            Dim sqlCon As New SqlConnection(My.Resources.con)
-            sqlCon.Open()
+                Dim sqlCon As New SqlConnection(My.Resources.con)
+                sqlCon.Open()
 
 
-            da = New SqlDataAdapter(query, sqlCon)
-            da.Fill(ds)
+                da = New SqlDataAdapter(query, sqlCon)
+                da.Fill(ds)
 
-            sqlCon.Close()
+                sqlCon.Close()
 
-
-            Return True
+                Return True
+            End If
         Catch ex As Exception
             Return False
         End Try
     End Function
+
+
+    Public Sub LiberarConexiones()
+        Dim sql As New SqlConnection(My.Resources.con)
+
+        sql.Close()
+        GC.Collect()
+
+    End Sub
+
 
     Public Function validarDVV_Tabla(tabla As String) As DataTable
         Dim queryFam As String = "IF (SELECT ISNULL(SUM(dvh),0) FROM " & tabla & ") " +
@@ -737,4 +747,26 @@ Public Class Seguridad
         Return t
     End Function
 
+    Public Function EjecutarConsultaRestore(SP As String) As Integer
+        Dim num As Integer
+        Dim CadenaRestore As String = Replace(My.Resources.con, "campo", "master")
+
+        Dim com As New SqlCommand(queryFam, sqlCon)
+
+        com.CommandText = SP
+        'cn.ConnectionString = CadenaRestore
+        'cn.Open()
+        'coman.Connection = cn
+        'Dr = coman.ExecuteReader
+        'While Dr.Read = True
+        '    If Dr.IsDBNull(0) = True Then
+        '        num = 0
+        '    Else
+        '        numer = Dr.Item(numer)
+        '    End If
+        'End While
+        'cn.Close()
+        'cn.Dispose()
+        Return num
+    End Function
 End Class

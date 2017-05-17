@@ -589,7 +589,6 @@
       <DependentUpon>ReporteVentaEspecifica.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Rpt_PedidoEspecifico.rdlc" />
-    <EmbeddedResource Include="Reportes\Rpt_PedidoListado.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Usuarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportePedidoEspecifico.resx">
       <DependentUpon>ReportePedidoEspecifico.vb</DependentUpon>

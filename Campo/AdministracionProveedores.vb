@@ -56,7 +56,7 @@
     'Boton Cancelar
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
         Me.Close()
-        MenuPrincipal.Show()
+        'MenuPrincipal.Show()
     End Sub
 
     'Alta Proveedor

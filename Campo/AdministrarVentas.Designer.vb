@@ -250,6 +250,7 @@ Partial Class AdministrarVentas
         Me.Controls.Add(Me.lblVentasCancel)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "AdministrarVentas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Ventas"
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

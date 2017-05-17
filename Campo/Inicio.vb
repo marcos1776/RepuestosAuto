@@ -1,6 +1,9 @@
 ﻿Imports System.IO
 Public Class Inicio
     Private Async Sub Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        'Me.MdiParent = MenuPrincipal
+
         Dim i As Integer
 
         For i = 0 To 100
@@ -45,17 +48,18 @@ Public Class Inicio
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
 
-        Dim men As New MenuPrincipal
-        men.Show()
+
+        'Dim men As New MenuPrincipal
+        'men.Show()
 
         Dim log As New Login()
         log.Show()
 
+        Me.Hide()
 
-        log.MdiParent = men
-        log.Show()
+        'Log.MdiParent = men
+        'Log.Show()
 
     End Sub
 

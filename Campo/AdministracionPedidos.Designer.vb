@@ -236,6 +236,7 @@ Partial Class AdministracionPedidos
         Me.Controls.Add(Me.btnModif)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "AdministracionPedidos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administracion Pedidos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

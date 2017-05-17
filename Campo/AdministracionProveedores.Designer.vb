@@ -411,6 +411,7 @@ Partial Class AdministracionProveedores
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.lblBuscar)
         Me.Name = "AdministracionProveedores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Proveedores"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

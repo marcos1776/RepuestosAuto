@@ -31,8 +31,11 @@ Partial Class ReporteListadoUsuarios
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.SP_ReporteUsuariosTableAdapter = New Campo.ReporteUsuariosTableAdapters.SP_ReporteUsuariosTableAdapter()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.SP_ReporteUsuariosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ReporteUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'SP_ReporteUsuariosBindingSource
@@ -49,25 +52,27 @@ Partial Class ReporteListadoUsuarios
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Habilitados", "Inhabilitados"})
-        Me.ComboBox1.Location = New System.Drawing.Point(298, 24)
+        Me.ComboBox1.Location = New System.Drawing.Point(220, 26)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(135, 21)
         Me.ComboBox1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(472, 22)
+        Me.Button1.BackColor = System.Drawing.Color.LimeGreen
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(395, 17)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 23)
+        Me.Button1.Size = New System.Drawing.Size(120, 39)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Generar Reporte"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(221, 25)
+        Me.Label1.Location = New System.Drawing.Point(143, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(61, 18)
         Me.Label1.TabIndex = 2
@@ -79,30 +84,57 @@ Partial Class ReporteListadoUsuarios
         ReportDataSource1.Value = Me.SP_ReporteUsuariosBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Campo.Rpt_Usuarios.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(12, 76)
+        Me.ReportViewer1.Location = New System.Drawing.Point(38, 96)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(754, 351)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1182, 553)
         Me.ReportViewer1.TabIndex = 3
         '
         'SP_ReporteUsuariosTableAdapter
         '
         Me.SP_ReporteUsuariosTableAdapter.ClearBeforeFill = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Location = New System.Drawing.Point(251, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(754, 69)
+        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.LightSalmon
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(553, 17)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(120, 39)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Cancelar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'ReporteListadoUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(778, 439)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1232, 681)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "ReporteListadoUsuarios"
-        Me.Text = "Rpt_Usuarios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Reporte Usuarios"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.SP_ReporteUsuariosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ReporteUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -113,4 +145,6 @@ Partial Class ReporteListadoUsuarios
     Friend WithEvents SP_ReporteUsuariosBindingSource As BindingSource
     Friend WithEvents ReporteUsuarios As ReporteUsuarios
     Friend WithEvents SP_ReporteUsuariosTableAdapter As ReporteUsuariosTableAdapters.SP_ReporteUsuariosTableAdapter
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button2 As Button
 End Class

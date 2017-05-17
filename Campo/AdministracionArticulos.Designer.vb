@@ -323,6 +323,7 @@ Partial Class Administrar_Articulos
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Administrar_Articulos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Articulos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

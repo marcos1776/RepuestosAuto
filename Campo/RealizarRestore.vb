@@ -1,5 +1,7 @@
 ﻿Public Class RealizarRestore
-
+    Dim consulta As String = ""
+    Dim fd As OpenFileDialog = New OpenFileDialog()
+    Dim Partes As List(Of String)
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Me.Hide()
@@ -12,7 +14,7 @@
             Dim seg As New BLL.Seguridad("Password")
 
             'seg.RealizarRestore(Path)
-            seg.RealizarRestore("aasd")
+            seg.RealizarRestore(consulta)
 
             'seg.registrarBitacora()
         Catch ex As Exception
@@ -23,41 +25,53 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim seg As New BLL.Seguridad("Password")
         Dim OFD As New OpenFileDialog()
 
-        Dim dialogo As DialogResult, m_PrimerNO As Boolean = True
+        Dim mensaje As DialogResult, m_PrimerNO As Boolean = True
 
         'Busco la primera parte
-        Dim Partes As List(Of String)
-        'dialogo = MsgBox(oIdioma.Cargar(Variables.ID_Idioma, "msg_UnaParte"), MsgBoxStyle.YesNo, "Mensaje")
+        Partes = New List(Of String)
+
+        If Login.ID_IDIOMA = 1 Then
+            mensaje = MsgBox("Desea elegir el archivo de origen? ", MsgBoxStyle.YesNo, "Mensaje")
+        Else
+            mensaje = MsgBox("Would you Like to select a source file ? ", MsgBoxStyle.YesNo, "Mensaje")
+        End If
 
 
-
-        'MessageBox.Show("Desea cargar un archivo de origen ?", MsgBoxStyle.YesNo, "Consulta")
-        'MessageBox.Show("Show", MsgBoxStyle.YesNo, "asd")
-
-        OFD.Filter = "Archivo BAK (*.Bak)|*.bak"
 
         'Voy agregando las partes
-        While dialogo = Windows.Forms.DialogResult.Yes
-            If OFD.ShowDialog = Windows.Forms.DialogResult.OK Then
-                Partes.Add(OFD.FileName.ToString)
+        While mensaje = Windows.Forms.DialogResult.Yes
+            If fd.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Partes.Add(fd.FileName.ToString)
             End If
-            'dialogo = MsgBox(oIdioma.Cargar(Variables.ID_Idioma, "msg_MasPartes"), MsgBoxStyle.YesNo, "Mensaje")
+
+            If Login.ID_IDIOMA = 1 Then
+                mensaje = MsgBox("¿ Desea añadir otra parte ? ", MsgBoxStyle.YesNo, "Mensaje")
+            Else
+                mensaje = MsgBox("Would you Like to add another part ? ", MsgBoxStyle.YesNo, "Mensaje")
+            End If
 
             m_PrimerNO = False
         End While
 
-        If dialogo = Windows.Forms.DialogResult.No And m_PrimerNO = True Then
+        If mensaje = Windows.Forms.DialogResult.No And m_PrimerNO = True Then
             Exit Sub
         End If
         'Si hay mas de una parte, creo el path para la query SQL
-        'If Not Partes Is Nothing Then
-        '    For Each origen As String In Partes
-        '        Path = Path & "DISK = ''" & origen.ToString & "'', "
-        '    Next
-        '    Path = Path.Remove(Path.Length - 2, 2)
-        'End If
-        'txtOrigen.Text = Path
+        If Not Partes Is Nothing Then
+            For Each origen As String In Partes
+                consulta = consulta & "DISK = ''" & origen.ToString & "'', "
+            Next
+            consulta = consulta.Remove(consulta.Length - 2, 2)
+        End If
+        TextBox2.Text = consulta
+
+        'Dim idBitacora As Integer = seg.registrarBitacora(Login.ID_USUARIO, "Alto", DateTime.Now, "Backup", 0)
+    End Sub
+
+    Private Sub RealizarRestore_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
     End Sub
 End Class

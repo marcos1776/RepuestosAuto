@@ -53,8 +53,30 @@ Public Class ReportePedidoListado
 
     Private Sub ReportePedidoListado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Cargo los usuarios
+        Dim ds As New DataSet
+        Dim usuarios As New DataTable
+        Dim listadoUsuarios As New BLL.Listas
+        ds = listadoUsuarios.obtenerUsuarios()
+
+
+        If ds.Tables("DatosUsuario").Select().Count > 0 Then
+            usuarios = ds.Tables("DatosUsuario").Select().CopyToDataTable
+            ComboBox1.DataSource = usuarios
+            ComboBox1.DisplayMember = "Nick"
+        End If
+
+
+
+
+
+
+        'TODO: esta línea de código carga datos en la tabla 'ListadoVentas.SP_ListadoVentas' Puede moverla o quitarla según sea necesario.
+        ' Me.SP_ListadoVentasTableAdapter.Fill(Me.ListadoVentas.SP_ListadoVentas)
+        DateTimePicker1.Value = Today.Date.AddYears(-1)
         Me.ReportViewer1.RefreshReport()
 
+        Me.ReportViewer1.RefreshReport()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -99,4 +121,7 @@ Public Class ReportePedidoListado
         Me.ReportViewer1.RefreshReport()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
+    End Sub
 End Class

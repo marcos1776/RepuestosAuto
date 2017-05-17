@@ -33,7 +33,7 @@ Partial Class RealizarRestore
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(18, 43)
+        Me.Label3.Location = New System.Drawing.Point(12, 24)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(100, 15)
         Me.Label3.TabIndex = 58
@@ -41,7 +41,7 @@ Partial Class RealizarRestore
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(474, 35)
+        Me.Button1.Location = New System.Drawing.Point(468, 16)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 57
@@ -50,9 +50,9 @@ Partial Class RealizarRestore
         '
         'TextBox2
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(144, 38)
+        Me.TextBox2.Location = New System.Drawing.Point(138, 19)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(324, 20)
         Me.TextBox2.TabIndex = 56
         '
@@ -60,7 +60,7 @@ Partial Class RealizarRestore
         '
         Me.Button3.BackColor = System.Drawing.Color.Chartreuse
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(108, 89)
+        Me.Button3.Location = New System.Drawing.Point(117, 70)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(91, 45)
         Me.Button3.TabIndex = 60
@@ -71,7 +71,7 @@ Partial Class RealizarRestore
         '
         Me.Button6.BackColor = System.Drawing.Color.LightSalmon
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(383, 111)
+        Me.Button6.Location = New System.Drawing.Point(387, 92)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 59
@@ -83,14 +83,16 @@ Partial Class RealizarRestore
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(564, 160)
+        Me.ClientSize = New System.Drawing.Size(564, 127)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Name = "RealizarRestore"
-        Me.Text = "Realizar restore"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Realizar Restore"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

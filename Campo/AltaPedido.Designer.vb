@@ -260,6 +260,7 @@ Partial Class AltaPedido
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Name = "AltaPedido"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nuevo Pedido"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

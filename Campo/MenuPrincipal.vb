@@ -185,19 +185,20 @@ Public Class MenuPrincipal
         AsignarPatentesToolStripMenuItem1.Visible = False
 
 
-        Dim Login As New Login
-        Login.ShowDialog(Me)
-        Login.MdiParent = Me
+        'Dim Login As New Login
+        'Login.ShowDialog(Me)
+        'Login.MdiParent = Me
 
 
+        'Dim Inicio As New Inicio
+        'Inicio.ShowDialog(Me)
 
-        'Login.Show()
 
 
     End Sub
 
     Private Sub ReporteVentaSimpleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteVentaSimpleToolStripMenuItem.Click
-        ReporteVentaEspecifica.MdiParent = Me
+        'ReporteVentaEspecifica.MdiParent = Me
         ReporteVentaEspecifica.Show()
     End Sub
 
@@ -217,17 +218,17 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub ReportePedidoEspecificoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportePedidoEspecificoToolStripMenuItem.Click
-        Reporte.MdiParent = Me
+        'Reporte.MdiParent = Me
         Reporte.Show()
     End Sub
 
     Private Sub ReporteListadoComprasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteListadoComprasToolStripMenuItem.Click
-        ReportePedidoListado.MdiParent = Me
+        'ReportePedidoListado.MdiParent = Me
         ReportePedidoListado.Show()
     End Sub
 
     Private Sub ReporteUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteUsuariosToolStripMenuItem.Click
-        ReporteListadoUsuarios.MdiParent = Me
+        'ReporteListadoUsuarios.MdiParent = Me
         ReporteListadoUsuarios.Show()
     End Sub
 
@@ -284,7 +285,7 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub ReporteArticulosMásVendidosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteArticulosMásVendidosToolStripMenuItem.Click
-        ReporteArticuloMasVendidos.MdiParent = Me
+        'ReporteArticuloMasVendidos.MdiParent = Me
         ReporteArticuloMasVendidos.Show()
     End Sub
 

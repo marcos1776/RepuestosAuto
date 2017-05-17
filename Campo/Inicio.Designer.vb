@@ -79,6 +79,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Name = "Inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()

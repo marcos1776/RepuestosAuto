@@ -138,7 +138,7 @@ Partial Class Login
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Login"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sistema Autopartes"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
