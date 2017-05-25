@@ -45,7 +45,9 @@ Partial Class ModificarContraseña
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(173, 78)
+        Me.TextBox3.MaxLength = 40
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox3.Size = New System.Drawing.Size(202, 20)
         Me.TextBox3.TabIndex = 11
         '
@@ -62,7 +64,9 @@ Partial Class ModificarContraseña
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(173, 45)
+        Me.TextBox2.MaxLength = 40
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(202, 20)
         Me.TextBox2.TabIndex = 13
         '
@@ -101,7 +105,9 @@ Partial Class ModificarContraseña
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(173, 14)
+        Me.TextBox1.MaxLength = 40
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox1.Size = New System.Drawing.Size(202, 20)
         Me.TextBox1.TabIndex = 49
         '

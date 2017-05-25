@@ -12,11 +12,13 @@
 
     'Cargo los articulos de Proveedores en el grid
     Private Sub Administrar_Articulos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         If (Login.ID_IDIOMA = 1) Then
             Me.Text = "Menu Articulos"
         Else
             Me.Text = "Articles Menu"
             lblDatosArticulos.Text = "Articles Data"
+            LinkLabel1.Text = "Help"
         End If
 
 
@@ -69,12 +71,28 @@
         If ds.Tables("ArticulosComprados").Select().Count > 0 Then
             articulosComprados = ds.Tables("ArticulosComprados").Select().CopyToDataTable
             DataGridView1.DataSource = articulosComprados
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView1.Columns(0).HeaderText = "Article ID"
+                DataGridView1.Columns(1).HeaderText = "Description"
+                DataGridView1.Columns(2).HeaderText = "Minimum stock"
+                DataGridView1.Columns(3).HeaderText = "Maximum stock"
+                DataGridView1.Columns(4).HeaderText = "Price"
+            End If
+
         End If
 
 
         If ds.Tables("ArticulosProveedores").Select().Count > 0 Then
             articulosProveedores = ds.Tables("ArticulosProveedores").Select().CopyToDataTable
             DataGridView2.DataSource = articulosProveedores
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView2.Columns(0).HeaderText = "Company Name"
+                DataGridView2.Columns(1).HeaderText = "Article Id"
+                DataGridView2.Columns(2).HeaderText = "Description"
+                DataGridView2.Columns(3).HeaderText = "Price"
+            End If
         End If
 
         'DataGridView1.Columns(2).Visible = False
@@ -332,5 +350,38 @@
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
         Me.Close()
 
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox1, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox2, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox3, 0, 0, VisibleTime)
+        End If
     End Sub
 End Class

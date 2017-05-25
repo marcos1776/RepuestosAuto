@@ -118,6 +118,71 @@ Public Class Seguridad
         Return System.Text.Encoding.Unicode.GetString(ms.ToArray)
     End Function
 
+    Public Sub RecalcularDVH()
+        Dim dtTablas As New DataTable
+        Dim dtContenido As New DataTable
+        Dim seg As New BLL.Seguridad("Password")
+        Dim lis As New DAL.Listas
+
+        Dim dvh As Integer
+
+
+        'Obtengo las tablas
+        dtTablas = lis.obtenerListadoTablasConDVV()
+        For Each r As DataRow In dtTablas.Rows
+
+            'Obtengo los registros de cada una de las tablas
+            dtContenido = lis.ObtenerRegistrosTabla(Trim(r.Item(0).ToString))
+
+            For Each cont As DataRow In dtContenido.Rows
+                Dim id As String
+
+                id = Trim(cont(0).ToString)
+
+
+                Dim str As String = ""
+                Dim i As Integer
+
+                'Armo el String
+                For i = 0 To dtContenido.Columns.Count - 2
+                    str = str + Trim(cont(i).ToString)
+                Next
+                dvh = seg.calcularDVH(str)
+
+
+                If Trim(r.Item(0).ToString) = "Telefono_Usuario" Then
+                    seg.ModificarDVH(Trim(cont(1).ToString), dvh, Trim(r.Item(0).ToString), Trim(dtContenido.Columns(1).ToString))
+                Else
+                    If Trim(r.Item(0).ToString) = "Telefono_Proveedor" Then
+                        seg.ModificarDVH(Trim(cont(1).ToString), dvh, Trim(r.Item(0).ToString), Trim(dtContenido.Columns(1).ToString))
+                    Else
+                        If Trim(r.Item(0).ToString) = "DireccionProveedores" Then
+                            seg.ModificarDVH(Trim(cont(1).ToString), dvh, Trim(r.Item(0).ToString), Trim(dtContenido.Columns(1).ToString))
+                        Else
+                            If Trim(r.Item(0).ToString) = "Detalle_Pedido" Then
+                                seg.ModificarDVH2(Trim(cont(1).ToString), id, dvh, Trim(r.Item(0).ToString), Trim(dtContenido.Columns(1).ToString), Trim(dtContenido.Columns(0).ToString))
+                            Else
+                                If Trim(r.Item(0).ToString) = "Detalle_Venta" Then
+                                    seg.ModificarDVH2(Trim(cont(1).ToString), id, dvh, Trim(r.Item(0).ToString), Trim(dtContenido.Columns(1).ToString), Trim(dtContenido.Columns(0).ToString))
+                                Else
+                                    seg.ModificarDVH(id, dvh, Trim(r.Item(0).ToString), dtContenido.Columns(0).ToString)
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+
+            Next
+
+
+            seg.ActualizarDVV(Trim(r.Item(0).ToString))
+
+        Next
+
+
+
+    End Sub
+
     Public Function generarContraseñaAleatoria(nombre As String, apellido As String, usuario As String) As String
         Dim password As String
         Dim user As New DAL.Usuario()
@@ -214,7 +279,7 @@ Public Class Seguridad
         If patentesAasignar.Count > 0 Then
             Dim mensaje As String
             mensaje = String.Join(Environment.NewLine, patentesAasignar.ToArray())
-            MsgBox("Debera asignar las siguientes patentes: " + mensaje)
+            MsgBox("Debera asignar las siguientes patentes:  " + mensaje)
         Else
             '
             ' Borro las patentes del usuario

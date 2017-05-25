@@ -199,8 +199,8 @@
             End If
 
 
-                    ''''''''''''''''' CALCULO DE DVH '''''''''''''''''''
-                    Dim str As String
+            ''''''''''''''''' CALCULO DE DVH '''''''''''''''''''
+            Dim str As String
             Dim dvh As Integer
             Dim seguridad As New BLL.Seguridad("Password")
             datosVenta = venta.ObtenerVentaXid(idVenta)
@@ -255,4 +255,19 @@
         End If
 
     End Sub
+
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox2, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+
+
 End Class

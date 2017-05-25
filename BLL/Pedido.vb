@@ -24,7 +24,7 @@ Public Class Pedido
         Dim fecha As New DateTime
         fecha = DateTime.Now
 
-        ExcelFileDestino = "C:\Users\LampaPc\Desktop\Campo\PedidosProveedores\" + prov + fecha.ToString("dd.MM.yyyy hh.mm") + ".xlsx"
+        ExcelFileDestino = "C:\Users\LampaPc\Desktop\Github\PedidosProveedores\" + prov + fecha.ToString("dd.MM.yyyy hh.mm") + ".xlsx"
         'ExcelFilePath = "C:\Users\marcos.lampacrescia\Desktop\Diploma\Campo\Campo\PedidosProveedores\excelMarcos.xlsx"
 
         'My.Computer.FileSystem.CopyFile(ExcelFilePath, ExcelFileDestino, True)

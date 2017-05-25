@@ -6,7 +6,8 @@
     Public Shared dtPatentesUsuario As New DataTable
     Public Shared NombreUsuario As String
 
-
+    Public Shared tooltipLetra As String
+    Public Shared tooltipNumero As String
 
     'Recuperar Contraseña
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -31,8 +32,12 @@
 
         If (ComboBox1.Text = "Español") Then
             ID_IDIOMA = 1
+            Me.tooltipNumero = "Ingrese solo números"
+            Me.tooltipLetra = "Ingrese solo letras"
         Else
             ID_IDIOMA = 2
+            Me.tooltipNumero = "Insert only numbers"
+            Me.tooltipLetra = "Insert only letters"
         End If
 
         'Validar usuario y contraseña
@@ -43,9 +48,10 @@
             usuarioEncontrado = True
 
             cargarPatentesUsuario()
-            If (seguridad.ValidarDVV) Then
+            If seguridad.validarDVV Then
 
-                If (seguridad.validarDVH) Then
+                If seguridad.validarDVH Then
+
 
                     Me.NombreUsuario = TextBox1.Text
 
@@ -76,19 +82,40 @@
 
                 Else
                     'Si no valida los DVH entonces si tiene la patente de restore , que acceda al sistema.
+                    Dim enc As Boolean = False
+
+                    For Each p As DataRow In dtPatentesUsuario.Rows
+                        If p.Item(0).ToString.Trim = "RealizarBackup" Then
+                            enc = True
+                        End If
+                    Next
+
+                    If enc Then
+                        Dim mensaje As DialogResult
+
+                        mensaje = MsgBox("Desea recalcular los digitos verificadores? ", MsgBoxStyle.YesNo, "Mensaje")
+
+                        If mensaje = Windows.Forms.DialogResult.Yes Then
+                            seguridad.RecalcularDVH()
+
+                            MessageBox.Show("Se han recalculado correctamente los digitos verificadores horizontales y verticales")
+                            seguridad.registrarBitacora(ID_USUARIO, "ALTA", DateTime.Now, "Se recalcularon los DVH / DVV", 0)
+                        Else
+                            Application.Exit()
+                            End
+                        End If
+
+                    End If
+
 
 
                 End If
             Else
-
-
-            End If
-
-
-        Else
                 MessageBox.Show("Error de Login")
 
+            End If
         End If
+
 
     End Sub
 

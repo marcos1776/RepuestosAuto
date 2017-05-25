@@ -53,6 +53,7 @@ Partial Class AdministracionUsuarios
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -245,12 +246,19 @@ Partial Class AdministracionUsuarios
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.TabStop = True
         '
+        'Button1
+        '
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'AdministracionUsuarios
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
@@ -301,4 +309,5 @@ Partial Class AdministracionUsuarios
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents HelpProvider1 As HelpProvider
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Button1 As Button
 End Class

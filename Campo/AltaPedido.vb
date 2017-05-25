@@ -18,10 +18,25 @@ Public Class AltaPedido
 
     'Cargo los grids
     Private Sub AltaPedido_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         If (Login.ID_IDIOMA = 1) Then
             Me.Text = "Nuevo Pedido"
         Else
             Me.Text = "New Order"
+
+            DataGridView1.Columns(0).HeaderText = "Article ID"
+            DataGridView1.Columns(1).HeaderText = "Description"
+            DataGridView1.Columns(2).HeaderText = "Supplier Stock"
+            DataGridView1.Columns(3).HeaderText = "Price"
+            DataGridView1.Columns(4).HeaderText = "Actions"
+
+            DataGridView2.Columns(0).HeaderText = "Article ID"
+            DataGridView2.Columns(1).HeaderText = "Description"
+            DataGridView2.Columns(2).HeaderText = "Quantity"
+            DataGridView2.Columns(3).HeaderText = "Price"
+            DataGridView2.Columns(4).HeaderText = "Subtotal"
+            DataGridView2.Columns(5).HeaderText = "Actions"
+
         End If
 
         DataGridView2.DataSource = Nothing
@@ -91,7 +106,12 @@ Public Class AltaPedido
 
         Dim btn As New DataGridViewButtonColumn
         btn.HeaderText = "Click Data"
-        btn.Text = "Añadir"
+        If Login.ID_IDIOMA <> 1 Then
+            btn.Text = "Add"
+        Else
+            btn.Text = "Añadir"
+        End If
+
         btn.Name = "btn"
         btn.UseColumnTextForButtonValue = True
 
@@ -295,4 +315,16 @@ Public Class AltaPedido
 
         DataGridView1.DataSource = dataview
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox1, 0, 0, VisibleTime)
+        End If
+    End Sub
+
 End Class

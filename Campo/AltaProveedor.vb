@@ -4,6 +4,7 @@
     Dim listaTelefonos As New List(Of String)
     Dim listaDirecciones As New List(Of String)
 
+
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Hide()
         MenuPrincipal.Show()
@@ -128,6 +129,8 @@
     End Sub
 
     Private Sub AltaProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+
         If Login.ID_IDIOMA = 1 Then
             Me.Text = "Nuevo Proveedor"
         Else
@@ -158,19 +161,27 @@
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
-        Dim bll As New BLL.Seguridad("Password")
-        e.Handled = bll.aceptaLetras(e.KeyChar)
-    End Sub
-
     Private Sub TextBox2_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
         Dim bll As New BLL.Seguridad("Password")
         e.Handled = bll.aceptaLetras(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipLetra, TextBox2, 0, 0, VisibleTime)
+        End If
+
     End Sub
 
     Private Sub TextBox3_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
         Dim bll As New BLL.Seguridad("Password")
         e.Handled = bll.aceptaLetras(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipLetra, TextBox3, 0, 0, VisibleTime)
+        End If
     End Sub
 
 

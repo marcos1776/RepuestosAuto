@@ -20,6 +20,7 @@
     End Sub
 
     Private Sub AdministracionPedidos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         If (Login.ID_IDIOMA = 1) Then
             Me.Text = "Administrar Pedidos"
         Else
@@ -146,6 +147,16 @@
             '    DataGridView1.Rows.Add(row(0), seguridad.Desencriptar(row(1)), seguridad.Desencriptar(row(2)), row(3), row(4), btn.Text)
             'Next
             DataGridView1.DataSource = pendiente
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView1.Columns(0).HeaderText = "Nº Order"
+                DataGridView1.Columns(1).HeaderText = "Supplier"
+                DataGridView1.Columns(2).HeaderText = "User"
+                DataGridView1.Columns(3).HeaderText = "Date"
+                DataGridView1.Columns(4).HeaderText = "Total"
+                DataGridView1.Columns(5).HeaderText = "Status"
+            End If
+
         End If
 
 
@@ -153,6 +164,15 @@
             confirmados = dt.Select("Estado = 'Confirmado'").CopyToDataTable
 
             DataGridView2.DataSource = confirmados
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView2.Columns(0).HeaderText = "Nº Order"
+                DataGridView2.Columns(1).HeaderText = "Supplier"
+                DataGridView2.Columns(2).HeaderText = "User"
+                DataGridView2.Columns(3).HeaderText = "Date"
+                DataGridView2.Columns(4).HeaderText = "Total"
+                DataGridView2.Columns(5).HeaderText = "Status"
+            End If
         End If
     End Sub
 

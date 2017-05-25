@@ -51,6 +51,7 @@ Partial Class AltaProveedor
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(134, 96)
+        Me.TextBox3.MaxLength = 40
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(169, 20)
         Me.TextBox3.TabIndex = 3
@@ -120,6 +121,7 @@ Partial Class AltaProveedor
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(132, 20)
+        Me.TextBox1.MaxLength = 40
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(169, 20)
         Me.TextBox1.TabIndex = 1
@@ -127,6 +129,7 @@ Partial Class AltaProveedor
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(134, 135)
+        Me.TextBox4.MaxLength = 120
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(169, 20)
         Me.TextBox4.TabIndex = 4
@@ -134,6 +137,7 @@ Partial Class AltaProveedor
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(132, 57)
+        Me.TextBox2.MaxLength = 40
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(169, 20)
         Me.TextBox2.TabIndex = 2
@@ -224,6 +228,7 @@ Partial Class AltaProveedor
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(432, 14)
+        Me.TextBox5.MaxLength = 40
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(183, 20)
         Me.TextBox5.TabIndex = 49

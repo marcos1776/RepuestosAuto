@@ -11,11 +11,14 @@
 
     'Load Form
     Private Sub AdministracionProveedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+
         If Login.ID_IDIOMA = 1 Then
             Me.Text = "Menu Proveedores"
         Else
             Me.Text = "Suppliers Menu"
             Me.LinkLabel1.Text = "Help"
+            Button1.Text = "Print List"
         End If
 
 
@@ -117,6 +120,13 @@
             DataGridView1.Columns(4).Visible = False
             'DataGridView1.Columns(5).Visible = False
             'DataGridView1.Columns(6).Visible = False
+
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView1.Columns(0).HeaderText = "Company Name"
+                DataGridView1.Columns(1).HeaderText = "Contact Name"
+                DataGridView1.Columns(2).HeaderText = "Contact Surname"
+            End If
         End If
 
         'If dt.Select("esActivo = 'N'").Count > 0 Then
@@ -387,5 +397,28 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         ListBox1.Items.Remove(ListBox1.SelectedItem)
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox2, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaNumeros(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipNumero, TextBox3, 0, 0, VisibleTime)
+        End If
     End Sub
 End Class

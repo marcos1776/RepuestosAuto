@@ -2,7 +2,6 @@
 
 Public Class AltaUsuario
     Dim strHelp As String = Application.StartupPath & "\Ayuda\AltaUsuario.chm"
-
     Dim listaTelefonos As New List(Of String)
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -115,6 +114,8 @@ Public Class AltaUsuario
     End Sub
 
     Private Sub AltaUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+
         Dim seguridad As New BLL.Seguridad("Password")
         Dim dtMensajes As New DataTable()
         dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 3)
@@ -145,37 +146,22 @@ Public Class AltaUsuario
         'e.Handled = aceptaLetras(e.KeyChar)
         Dim bll As New BLL.Seguridad("Password")
         e.Handled = bll.aceptaLetras(e.KeyChar)
-        Dim msj As String
-
-        If Login.ID_IDIOMA = 1 Then
-            msj = "Ingrese solo letras"
-        Else
-            msj = "Insert only letters"
-        End If
 
         If (e.Handled) Then
             Dim tt As New ToolTip()
             Dim VisibleTime As Integer = 1000
-            tt.Show(msj, TextBox1, 0, 0, VisibleTime)
+            tt.Show(Login.tooltipLetra, TextBox1, 0, 0, VisibleTime)
         End If
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+    Private Sub TextBox2_TextChanged(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress, TextBox2.TextChanged
         Dim bll As New BLL.Seguridad("Password")
         e.Handled = bll.aceptaLetras(e.KeyChar)
-
-        Dim msj As String
-
-        If Login.ID_IDIOMA = 1 Then
-            msj = "Ingrese solo letras"
-        Else
-            msj = "Insert only letters"
-        End If
 
         If (e.Handled) Then
             Dim tt As New ToolTip()
             Dim VisibleTime As Integer = 1000
-            tt.Show("Ingrese solo letras", TextBox2, 0, 0, VisibleTime)
+            tt.Show(Login.tooltipLetra, TextBox2, 0, 0, VisibleTime)
         End If
     End Sub
 
@@ -183,18 +169,10 @@ Public Class AltaUsuario
         Dim bll As New BLL.Seguridad("Password")
         e.Handled = bll.aceptaLetras(e.KeyChar)
 
-        Dim msj As String
-
-        If Login.ID_IDIOMA = 1 Then
-            msj = "Ingrese solo letras"
-        Else
-            msj = "Insert only letters"
-        End If
-
         If (e.Handled) Then
             Dim tt As New ToolTip()
             Dim VisibleTime As Integer = 1000
-            tt.Show("Ingrese solo letras", TextBox3, 0, 0, VisibleTime)
+            tt.Show(Login.tooltipLetra, TextBox3, 0, 0, VisibleTime)
         End If
     End Sub
 
@@ -202,18 +180,10 @@ Public Class AltaUsuario
         Dim bll As New BLL.Seguridad("Password")
         e.Handled = bll.aceptaNumeros(e.KeyChar)
 
-        Dim msj As String
-
-        If Login.ID_IDIOMA = 1 Then
-            msj = "Ingrese solo numeros"
-        Else
-            msj = "Insert only numbers"
-        End If
-
         If (e.Handled) Then
             Dim tt As New ToolTip()
             Dim VisibleTime As Integer = 1000
-            tt.Show("Ingrese solo numeros", TextBox4, 0, 0, VisibleTime)
+            tt.Show(Login.tooltipNumero, TextBox4, 0, 0, VisibleTime)
         End If
     End Sub
 

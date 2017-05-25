@@ -22,6 +22,7 @@
     End Sub
 
     Private Sub AltaArticulo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         ComboBox1.Items.Clear()
         ListBox1.Items.Clear()
 

@@ -154,6 +154,7 @@ Partial Class Administrar_Articulos
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(161, 245)
+        Me.TextBox1.MaxLength = 6
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(101, 20)
         Me.TextBox1.TabIndex = 60
@@ -161,6 +162,7 @@ Partial Class Administrar_Articulos
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(162, 282)
+        Me.TextBox2.MaxLength = 6
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 61
@@ -168,6 +170,7 @@ Partial Class Administrar_Articulos
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(162, 320)
+        Me.TextBox3.MaxLength = 4
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 62

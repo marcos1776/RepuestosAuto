@@ -265,6 +265,7 @@ Partial Class AltaArticulo
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Button6)
         Me.Name = "AltaArticulo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nuevo Articulo"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -52,6 +52,7 @@ Partial Class AdministracionProveedores
         Me.lblMail = New System.Windows.Forms.Label()
         Me.lblDatosProveedor = New System.Windows.Forms.Label()
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -153,6 +154,7 @@ Partial Class AdministracionProveedores
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(147, 161)
+        Me.TextBox5.MaxLength = 40
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(170, 20)
         Me.TextBox5.TabIndex = 59
@@ -241,6 +243,7 @@ Partial Class AdministracionProveedores
         Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(147, 66)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox3.MaxLength = 40
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(170, 20)
         Me.TextBox3.TabIndex = 49
@@ -250,6 +253,7 @@ Partial Class AdministracionProveedores
         Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(147, 38)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox2.MaxLength = 40
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(170, 20)
         Me.TextBox2.TabIndex = 48
@@ -259,6 +263,7 @@ Partial Class AdministracionProveedores
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(147, 10)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.MaxLength = 40
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(170, 20)
         Me.TextBox1.TabIndex = 47
@@ -279,7 +284,7 @@ Partial Class AdministracionProveedores
         Me.lblApellidoContacto.AutoSize = True
         Me.lblApellidoContacto.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
         Me.lblApellidoContacto.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblApellidoContacto.Location = New System.Drawing.Point(23, 71)
+        Me.lblApellidoContacto.Location = New System.Drawing.Point(19, 71)
         Me.lblApellidoContacto.Name = "lblApellidoContacto"
         Me.lblApellidoContacto.Size = New System.Drawing.Size(123, 15)
         Me.lblApellidoContacto.TabIndex = 45
@@ -348,6 +353,7 @@ Partial Class AdministracionProveedores
         Me.TextBox4.Enabled = False
         Me.TextBox4.Location = New System.Drawing.Point(147, 94)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox4.MaxLength = 120
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(170, 20)
         Me.TextBox4.TabIndex = 38
@@ -385,6 +391,18 @@ Partial Class AdministracionProveedores
         Me.lblDatosProveedor.TabIndex = 42
         Me.lblDatosProveedor.Text = "Datos Proveedor"
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button1.Location = New System.Drawing.Point(326, 38)
+        Me.Button1.Name = "Button1"
+        Me.HelpProvider1.SetShowHelp(Me.Button1, True)
+        Me.Button1.Size = New System.Drawing.Size(108, 23)
+        Me.Button1.TabIndex = 45
+        Me.Button1.Text = "Imprimir Listado"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
@@ -402,6 +420,7 @@ Partial Class AdministracionProveedores
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(850, 574)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblDatosProveedor)
@@ -451,4 +470,5 @@ Partial Class AdministracionProveedores
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Button1 As Button
 End Class

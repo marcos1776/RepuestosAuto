@@ -94,6 +94,7 @@ Partial Class AltaFamilia
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(364, 334)
+        Me.ControlBox = False
         Me.Controls.Add(Me.lblPat)
         Me.Controls.Add(Me.CheckedListBox2)
         Me.Controls.Add(Me.btnCancel)

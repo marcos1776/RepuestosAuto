@@ -85,3 +85,4 @@ C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
 C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.dll
 C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.xml
 C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.pdb
+C:\Users\LampaPc\Desktop\Github\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache

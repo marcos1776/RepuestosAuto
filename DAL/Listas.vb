@@ -164,6 +164,48 @@ Public Class Listas
         Return t
     End Function
 
+    Public Function ObtenerRegistrosTabla(tabla As String) As DataTable
+        Dim sqlCon As New SqlConnection(My.Resources.con)
+        sqlCon.Open()
+        Dim query As String = "Select * from " & tabla
+
+        Dim com As New SqlCommand(query, sqlCon)
+
+        com.CommandType = CommandType.Text
+        Dim dr As SqlDataReader
+        dr = com.ExecuteReader
+
+        Dim t As DataTable = New DataTable
+        t.Load(dr)
+
+        com.ExecuteNonQuery()
+
+
+        sqlCon.Close()
+        Return t
+    End Function
+
+    Public Function obtenerListadoTablasConDVV() As DataTable
+        Dim sqlCon As New SqlConnection(My.Resources.con)
+        sqlCon.Open()
+        Dim query As String = "Select * from DVV"
+
+        Dim com As New SqlCommand(query, sqlCon)
+
+        com.CommandType = CommandType.Text
+        Dim dr As SqlDataReader
+        dr = com.ExecuteReader
+
+        Dim t As DataTable = New DataTable
+        t.Load(dr)
+
+        com.ExecuteNonQuery()
+
+
+        sqlCon.Close()
+        Return t
+    End Function
+
     'Obtengo patentes segun el usuario
     Function obtenerListadoPatentesUsuario(user As String) As DataSet
         Dim sqlCon As New SqlConnection(My.Resources.con)

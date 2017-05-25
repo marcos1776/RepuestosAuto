@@ -20,6 +20,7 @@
         Else
             Me.Text = "User Menu"
             Me.LinkLabel1.Text = "Help"
+            Button1.Text = "Print list"
         End If
 
         LblBuscar.Text = dtMensajes.Rows(0).Item(5).ToString
@@ -80,7 +81,17 @@
             DataGridView1.Columns(4).Visible = False
             DataGridView1.Columns(5).Visible = False
             DataGridView1.Columns(6).Visible = False
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView1.Columns(0).HeaderText = "Name"
+                DataGridView1.Columns(1).HeaderText = "Surname"
+                DataGridView1.Columns(2).HeaderText = "Nick"
+            End If
+
+
         End If
+
+
 
         'If dt.Select("esActivo = 'N'").Count > 0 Then
         '    inhabilitados = dt.Select("esActivo = 'N'").CopyToDataTable
@@ -366,4 +377,53 @@
         HelpProvider1.HelpNamespace = strHelp
         Help.ShowHelp(Me, HelpProvider1.HelpNamespace, HelpNavigator.TableOfContents)
     End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        'e.Handled = aceptaLetras(e.KeyChar)
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaLetras(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipLetra, TextBox1, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        'e.Handled = aceptaLetras(e.KeyChar)
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaLetras(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipLetra, TextBox2, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        'e.Handled = aceptaLetras(e.KeyChar)
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaLetras(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipLetra, TextBox3, 0, 0, VisibleTime)
+        End If
+    End Sub
+
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+        'e.Handled = aceptaLetras(e.KeyChar)
+        Dim bll As New BLL.Seguridad("Password")
+        e.Handled = bll.aceptaLetras(e.KeyChar)
+
+        If (e.Handled) Then
+            Dim tt As New ToolTip()
+            Dim VisibleTime As Integer = 1000
+            tt.Show(Login.tooltipLetra, TextBox5, 0, 0, VisibleTime)
+        End If
+    End Sub
+
 End Class

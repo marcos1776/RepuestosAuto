@@ -706,7 +706,7 @@ Public Class Seguridad
                 sqlCon.Close()
 
                 Return True
-            End If
+            'End If
         Catch ex As Exception
             Return False
         End Try
@@ -753,7 +753,7 @@ Public Class Seguridad
 
         'Dim com As New SqlCommand(queryFam, sqlCon)
 
-        com.CommandText = SP
+        'com.CommandText = SP
         'cn.ConnectionString = CadenaRestore
         'cn.Open()
         'coman.Connection = cn
