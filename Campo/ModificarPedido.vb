@@ -4,12 +4,31 @@
     Public idPedido As Integer
     Public carrito As New DataTable
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.Hide()
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Me.Close()
         MenuPrincipal.Show()
     End Sub
 
     Private Sub ModificarPedido_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim dtMensajes As New DataTable()
+        dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 17)
+
+
+        lblArticulos.Text = dtMensajes.Rows(0).Item(5).ToString
+        lblBusc.Text = dtMensajes.Rows(1).Item(5).ToString
+        lblCant.Text = dtMensajes.Rows(2).Item(5).ToString
+        lblCarro.Text = dtMensajes.Rows(3).Item(5).ToString
+        btnModif.Text = dtMensajes.Rows(4).Item(5).ToString
+        btnCancel.Text = dtMensajes.Rows(5).Item(5).ToString
+
+
+        If Login.ID_IDIOMA <> 1 Then
+            Me.Text = "Modify Order"
+        End If
+
+
+
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
@@ -20,6 +39,19 @@
         carrito.Columns.Add("Cantidad", GetType(Integer))
         carrito.Columns.Add("Precio", GetType(Double))
         carrito.Columns.Add("Subtotal", GetType(Double))
+
+        If Login.ID_IDIOMA <> 1 Then
+            DataGridView1.Columns(0).HeaderText = "Article Id"
+            DataGridView1.Columns(1).HeaderText = "Description"
+            DataGridView1.Columns(2).HeaderText = "Supplier Stock"
+            DataGridView1.Columns(3).HeaderText = "Price"
+
+            DataGridView2.Columns(0).HeaderText = "Article Id"
+            DataGridView2.Columns(1).HeaderText = "Description"
+            DataGridView2.Columns(2).HeaderText = "Quantity"
+            DataGridView2.Columns(3).HeaderText = "Price"
+            DataGridView2.Columns(4).HeaderText = "Subtotal"
+        End If
     End Sub
 
     'Borro del carrito de compras
@@ -93,7 +125,7 @@
 
     'Realizo la modificacion del pedido
     'Elimino el detalle pedido , creo uno nuevo con el carrito , y actualizo el encabezado
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnModif.Click
         Dim pedido As New BLL.Pedido
 
         pedido.eliminarPedido(Me.idPedido)

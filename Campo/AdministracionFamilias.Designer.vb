@@ -179,6 +179,7 @@ Partial Class AdministracionFamilias
         Me.Controls.Add(Me.btnElimFam)
         Me.Controls.Add(Me.btnNuevaFam)
         Me.Name = "AdministracionFamilias"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Familias"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

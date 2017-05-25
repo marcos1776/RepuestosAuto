@@ -129,7 +129,7 @@ Public Class Listas
         Dim sqlCon As New SqlConnection(My.Resources.con)
         sqlCon.Open()
 
-        Dim query As String = "select b1.* from bitacora b1 " +
+        Dim query As String = "select u1.Nick, b1.Criticidad, B1.Fecha,B1.Descripcion  from bitacora b1 " +
         "join usuario u1 on b1.idUsuario = u1.IdUsuario " +
         "where (1=1) "
 

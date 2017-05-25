@@ -9,6 +9,23 @@
 
     'Cargo las patentes
     Private Sub AsignacionUsuarioPatentes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim dtMensajes As New DataTable()
+        dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 21)
+
+
+        lblUsuario.Text = dtMensajes.Rows(0).Item(5).ToString
+        lblPat.Text = dtMensajes.Rows(1).Item(5).ToString
+        lblPatAs.Text = dtMensajes.Rows(2).Item(5).ToString
+        lblFam.Text = dtMensajes.Rows(3).Item(5).ToString
+        lblFamAsig.Text = dtMensajes.Rows(4).Item(5).ToString
+        lblPatNeg.Text = dtMensajes.Rows(5).Item(5).ToString
+        btnVolver.Text = dtMensajes.Rows(6).Item(5).ToString
+
+
+
 
         Dim dsUsuarios As New DataSet
         Dim listadoUsuarios As New BLL.Listas
@@ -435,7 +452,7 @@
 
 
     'Cuando se apliquen los cambios
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         MenuPrincipal.Show()
         Me.Close()
 

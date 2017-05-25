@@ -34,6 +34,7 @@ Partial Class ConsultarBitacora
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +62,7 @@ Partial Class ConsultarBitacora
         '
         Me.lblUsuario.AutoSize = True
         Me.lblUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsuario.Location = New System.Drawing.Point(233, 18)
+        Me.lblUsuario.Location = New System.Drawing.Point(328, 17)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(57, 15)
         Me.lblUsuario.TabIndex = 10
@@ -71,7 +72,7 @@ Partial Class ConsultarBitacora
         '
         Me.lblCriticidad.AutoSize = True
         Me.lblCriticidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCriticidad.Location = New System.Drawing.Point(222, 55)
+        Me.lblCriticidad.Location = New System.Drawing.Point(317, 54)
         Me.lblCriticidad.Name = "lblCriticidad"
         Me.lblCriticidad.Size = New System.Drawing.Size(68, 15)
         Me.lblCriticidad.TabIndex = 11
@@ -80,7 +81,7 @@ Partial Class ConsultarBitacora
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(318, 11)
+        Me.ComboBox1.Location = New System.Drawing.Point(413, 10)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(166, 21)
         Me.ComboBox1.TabIndex = 12
@@ -89,7 +90,7 @@ Partial Class ConsultarBitacora
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Alta", "Media", "Baja"})
-        Me.ComboBox2.Location = New System.Drawing.Point(318, 49)
+        Me.ComboBox2.Location = New System.Drawing.Point(413, 48)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(166, 21)
         Me.ComboBox2.TabIndex = 13
@@ -98,7 +99,7 @@ Partial Class ConsultarBitacora
         '
         Me.btnBuscar.BackColor = System.Drawing.Color.Chartreuse
         Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(532, 25)
+        Me.btnBuscar.Location = New System.Drawing.Point(667, 25)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(91, 45)
         Me.btnBuscar.TabIndex = 43
@@ -110,9 +111,9 @@ Partial Class ConsultarBitacora
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(37, 139)
+        Me.DataGridView1.Location = New System.Drawing.Point(26, 139)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(586, 280)
+        Me.DataGridView1.Size = New System.Drawing.Size(721, 280)
         Me.DataGridView1.TabIndex = 44
         '
         'lblMovimientos
@@ -129,7 +130,7 @@ Partial Class ConsultarBitacora
         '
         Me.btnCancelar.BackColor = System.Drawing.Color.LightSalmon
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(548, 447)
+        Me.btnCancelar.Location = New System.Drawing.Point(683, 441)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 60
@@ -152,12 +153,24 @@ Partial Class ConsultarBitacora
         Me.DateTimePicker2.Size = New System.Drawing.Size(102, 20)
         Me.DateTimePicker2.TabIndex = 62
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(331, 442)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 50)
+        Me.Button1.TabIndex = 63
+        Me.Button1.Text = "Imprimir Listado"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ConsultarBitacora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(653, 504)
+        Me.ClientSize = New System.Drawing.Size(770, 504)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DateTimePicker2)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.btnCancelar)
@@ -171,6 +184,7 @@ Partial Class ConsultarBitacora
         Me.Controls.Add(Me.lblHasta)
         Me.Controls.Add(Me.lblDesde)
         Me.Name = "ConsultarBitacora"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Bitácora"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -189,4 +203,5 @@ Partial Class ConsultarBitacora
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Button1 As Button
 End Class

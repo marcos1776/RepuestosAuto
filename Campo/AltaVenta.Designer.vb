@@ -76,7 +76,7 @@ Partial Class AltaVenta
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(451, 149)
+        Me.DataGridView1.Size = New System.Drawing.Size(630, 149)
         Me.DataGridView1.TabIndex = 42
         '
         'Column1
@@ -131,7 +131,7 @@ Partial Class AltaVenta
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView2.Size = New System.Drawing.Size(451, 135)
+        Me.DataGridView2.Size = New System.Drawing.Size(630, 135)
         Me.DataGridView2.TabIndex = 50
         '
         'a
@@ -184,7 +184,7 @@ Partial Class AltaVenta
         '
         Me.btnCancel.BackColor = System.Drawing.Color.LightSalmon
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(385, 495)
+        Me.btnCancel.Location = New System.Drawing.Point(564, 495)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 28)
         Me.btnCancel.TabIndex = 57
@@ -206,7 +206,7 @@ Partial Class AltaVenta
         '
         Me.lblTotal.AutoSize = True
         Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotal.Location = New System.Drawing.Point(294, 464)
+        Me.lblTotal.Location = New System.Drawing.Point(436, 464)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(79, 25)
         Me.lblTotal.TabIndex = 59
@@ -241,7 +241,8 @@ Partial Class AltaVenta
         '
         'btnBusc
         '
-        Me.btnBusc.Location = New System.Drawing.Point(299, 10)
+        Me.btnBusc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBusc.Location = New System.Drawing.Point(344, 30)
         Me.btnBusc.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBusc.Name = "btnBusc"
         Me.btnBusc.Size = New System.Drawing.Size(61, 25)
@@ -252,10 +253,11 @@ Partial Class AltaVenta
         'rbPersona
         '
         Me.rbPersona.AutoSize = True
+        Me.rbPersona.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbPersona.Location = New System.Drawing.Point(105, 14)
         Me.rbPersona.Margin = New System.Windows.Forms.Padding(2)
         Me.rbPersona.Name = "rbPersona"
-        Me.rbPersona.Size = New System.Drawing.Size(64, 17)
+        Me.rbPersona.Size = New System.Drawing.Size(71, 17)
         Me.rbPersona.TabIndex = 79
         Me.rbPersona.TabStop = True
         Me.rbPersona.Text = "Persona"
@@ -264,10 +266,11 @@ Partial Class AltaVenta
         'rbEmpresa
         '
         Me.rbEmpresa.AutoSize = True
-        Me.rbEmpresa.Location = New System.Drawing.Point(211, 12)
+        Me.rbEmpresa.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbEmpresa.Location = New System.Drawing.Point(224, 15)
         Me.rbEmpresa.Margin = New System.Windows.Forms.Padding(2)
         Me.rbEmpresa.Name = "rbEmpresa"
-        Me.rbEmpresa.Size = New System.Drawing.Size(66, 17)
+        Me.rbEmpresa.Size = New System.Drawing.Size(73, 17)
         Me.rbEmpresa.TabIndex = 80
         Me.rbEmpresa.TabStop = True
         Me.rbEmpresa.Text = "Empresa"
@@ -285,7 +288,7 @@ Partial Class AltaVenta
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(363, 464)
+        Me.Label5.Location = New System.Drawing.Point(538, 464)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(18, 25)
@@ -294,15 +297,16 @@ Partial Class AltaVenta
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(105, 38)
+        Me.TextBox1.Location = New System.Drawing.Point(105, 35)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(172, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(192, 20)
         Me.TextBox1.TabIndex = 77
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(385, 11)
+        Me.btnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevo.Location = New System.Drawing.Point(430, 31)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(61, 23)
         Me.btnNuevo.TabIndex = 83
@@ -314,7 +318,7 @@ Partial Class AltaVenta
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(469, 533)
+        Me.ClientSize = New System.Drawing.Size(651, 533)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.Label5)

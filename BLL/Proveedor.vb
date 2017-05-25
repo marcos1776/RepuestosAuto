@@ -169,9 +169,10 @@ Public Class Proveedor
     'Modifico un Proveedor
     Public Sub ModificarProveedor(prov As BLL.Proveedor, idProv As Integer)
         Dim pr As New DAL.Proveedor()
-        pr.ModificarProveedor(idProv, prov.nombre_empresa, prov.nombre_contacto, prov.apellido_contacto, prov.email)
-        pr.BorrarTelefonosProveedor(idProv)
-        pr.BorrarDireccionProveedor(idProv)
+        Dim seg As New BLL.Seguridad("Password")
+        pr.ModificarProveedor(idProv, seg.Encriptar(Trim(prov.nombre_empresa)), seg.Encriptar(Trim(prov.nombre_contacto)), seg.Encriptar(Trim(prov.apellido_contacto)), seg.Encriptar(Trim(prov.email)))
+        'pr.BorrarTelefonosProveedor(idProv)
+        'pr.BorrarDireccionProveedor(idProv)
     End Sub
 
 

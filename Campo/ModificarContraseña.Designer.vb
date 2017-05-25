@@ -22,25 +22,25 @@ Partial Class ModificarContraseña
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblConfir = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblNuev = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnModif = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.lblAnt = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'Label4
+        'lblConfir
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(15, 81)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 15)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Confirmar contraseña"
+        Me.lblConfir.AutoSize = True
+        Me.lblConfir.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblConfir.Location = New System.Drawing.Point(23, 83)
+        Me.lblConfir.Name = "lblConfir"
+        Me.lblConfir.Size = New System.Drawing.Size(145, 15)
+        Me.lblConfir.TabIndex = 12
+        Me.lblConfir.Text = "Confirmar contraseña"
         '
         'TextBox3
         '
@@ -51,15 +51,15 @@ Partial Class ModificarContraseña
         Me.TextBox3.Size = New System.Drawing.Size(202, 20)
         Me.TextBox3.TabIndex = 11
         '
-        'Label1
+        'lblNuev
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(35, 48)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(122, 15)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Nueva contraseña"
+        Me.lblNuev.AutoSize = True
+        Me.lblNuev.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNuev.Location = New System.Drawing.Point(23, 50)
+        Me.lblNuev.Name = "lblNuev"
+        Me.lblNuev.Size = New System.Drawing.Size(122, 15)
+        Me.lblNuev.TabIndex = 14
+        Me.lblNuev.Text = "Nueva contraseña"
         '
         'TextBox2
         '
@@ -70,37 +70,37 @@ Partial Class ModificarContraseña
         Me.TextBox2.Size = New System.Drawing.Size(202, 20)
         Me.TextBox2.TabIndex = 13
         '
-        'Button3
+        'btnModif
         '
-        Me.Button3.BackColor = System.Drawing.Color.Chartreuse
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(66, 128)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(91, 45)
-        Me.Button3.TabIndex = 48
-        Me.Button3.Text = "Modificar Contraseña"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnModif.BackColor = System.Drawing.Color.Chartreuse
+        Me.btnModif.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModif.Location = New System.Drawing.Point(66, 128)
+        Me.btnModif.Name = "btnModif"
+        Me.btnModif.Size = New System.Drawing.Size(91, 45)
+        Me.btnModif.TabIndex = 48
+        Me.btnModif.Text = "Modificar Contraseña"
+        Me.btnModif.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnCancel
         '
-        Me.Button6.BackColor = System.Drawing.Color.LightSalmon
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(306, 150)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 47
-        Me.Button6.Text = "Cancelar"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.Color.LightSalmon
+        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(306, 150)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 47
+        Me.btnCancel.Text = "Cancelar"
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'Label2
+        'lblAnt
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 17)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(134, 15)
-        Me.Label2.TabIndex = 50
-        Me.Label2.Text = "Contraseña Anterior"
+        Me.lblAnt.AutoSize = True
+        Me.lblAnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAnt.Location = New System.Drawing.Point(23, 17)
+        Me.lblAnt.Name = "lblAnt"
+        Me.lblAnt.Size = New System.Drawing.Size(134, 15)
+        Me.lblAnt.TabIndex = 50
+        Me.lblAnt.Text = "Contraseña Anterior"
         '
         'TextBox1
         '
@@ -118,26 +118,27 @@ Partial Class ModificarContraseña
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(386, 192)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblAnt)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnModif)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.lblNuev)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblConfir)
         Me.Controls.Add(Me.TextBox3)
         Me.Name = "ModificarContraseña"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modificar contraseña"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents lblConfir As System.Windows.Forms.Label
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblNuev As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnModif As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents lblAnt As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

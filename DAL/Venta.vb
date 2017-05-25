@@ -14,7 +14,7 @@ Public Class Venta
             tipoCliente = "(select IdCliente from empresa where Cuit = '" & cliente & "')"
         End If
 
-        Dim query As String = "Insert into Venta (IdCliente , idUsuario, fecha, total, esCancelada, dvh)Values(" & tipoCliente & "," & idUsuario & ",(select GETDATE()), " & total & ", 'N' , null)"
+        Dim query As String = "Insert into Venta (IdCliente , idUsuario, fecha, total, esCancelada, dvh)Values(" & tipoCliente & "," & idUsuario & ",(select GETDATE()), '" & total.ToString.Replace(",", ".") & "', 'N' , null)"
 
         Dim query2 As String = "Select @@Identity"
 

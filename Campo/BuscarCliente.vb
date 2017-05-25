@@ -20,4 +20,7 @@
         Me.Close()
     End Sub
 
+    Private Sub BuscarCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

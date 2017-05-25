@@ -3,13 +3,13 @@
     Dim fd As OpenFileDialog = New OpenFileDialog()
     Dim Partes As List(Of String)
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Hide()
         MenuPrincipal.Show()
     End Sub
 
     'Realizar Restore
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnRealizar.Click
         Try
             Dim seg As New BLL.Seguridad("Password")
 
@@ -24,7 +24,7 @@
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnExam.Click
         Dim seg As New BLL.Seguridad("Password")
         Dim OFD As New OpenFileDialog()
 
@@ -73,5 +73,20 @@
 
     Private Sub RealizarRestore_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim dtMensajes As New DataTable()
+        dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 20)
+
+
+        lblOrigen.Text = dtMensajes.Rows(0).Item(5).ToString
+        btnExam.Text = dtMensajes.Rows(1).Item(5).ToString
+        btnRealizar.Text = dtMensajes.Rows(2).Item(5).ToString
+        btnCancel.Text = dtMensajes.Rows(3).Item(5).ToString
+
+
+        If Login.ID_IDIOMA <> 1 Then
+            Me.Text = "Generate Restore"
+        End If
     End Sub
 End Class

@@ -1,12 +1,12 @@
 ﻿Public Class ModificarContraseña
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Close()
         MenuPrincipal.Show()
     End Sub
 
     'Modificar contraseña
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnModif.Click
         Dim seguridad As New BLL.Seguridad("Password")
         Dim usuario As New BLL.Administrador
         'Que compruebe que los campos no sean blancos
@@ -77,4 +77,21 @@
             Return True
         End If
     End Function
+
+    Private Sub ModificarContraseña_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim dtMensajes As New DataTable()
+        dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 18)
+
+
+        lblAnt.Text = dtMensajes.Rows(0).Item(5).ToString
+        lblNuev.Text = dtMensajes.Rows(1).Item(5).ToString
+        lblConfir.Text = dtMensajes.Rows(2).Item(5).ToString
+        btnModif.Text = dtMensajes.Rows(3).Item(5).ToString
+        btnCancel.Text = dtMensajes.Rows(4).Item(5).ToString
+
+        If Login.ID_IDIOMA <> 1 Then
+            Me.Text = "Modify Password"
+        End If
+    End Sub
 End Class

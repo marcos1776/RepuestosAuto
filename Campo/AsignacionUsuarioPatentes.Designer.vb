@@ -22,14 +22,14 @@ Partial Class AsignacionUsuarioPatentes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblPat = New System.Windows.Forms.Label()
+        Me.lblFam = New System.Windows.Forms.Label()
+        Me.lblPatAs = New System.Windows.Forms.Label()
+        Me.lblFamAsig = New System.Windows.Forms.Label()
+        Me.lblPatNeg = New System.Windows.Forms.Label()
+        Me.lblUsuario = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
@@ -43,65 +43,65 @@ Partial Class AsignacionUsuarioPatentes
         Me.TreeView2 = New System.Windows.Forms.TreeView()
         Me.SuspendLayout()
         '
-        'Label2
+        'lblPat
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 42)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 15)
-        Me.Label2.TabIndex = 51
-        Me.Label2.Text = "Patentes"
+        Me.lblPat.AutoSize = True
+        Me.lblPat.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPat.Location = New System.Drawing.Point(12, 42)
+        Me.lblPat.Name = "lblPat"
+        Me.lblPat.Size = New System.Drawing.Size(63, 15)
+        Me.lblPat.TabIndex = 51
+        Me.lblPat.Text = "Patentes"
         '
-        'Label4
+        'lblFam
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(543, 51)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(62, 15)
-        Me.Label4.TabIndex = 55
-        Me.Label4.Text = "Familias"
+        Me.lblFam.AutoSize = True
+        Me.lblFam.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFam.Location = New System.Drawing.Point(543, 51)
+        Me.lblFam.Name = "lblFam"
+        Me.lblFam.Size = New System.Drawing.Size(62, 15)
+        Me.lblFam.TabIndex = 55
+        Me.lblFam.Text = "Familias"
         '
-        'Label5
+        'lblPatAs
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(291, 42)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(133, 15)
-        Me.Label5.TabIndex = 62
-        Me.Label5.Text = "Patentes Asignadas"
+        Me.lblPatAs.AutoSize = True
+        Me.lblPatAs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPatAs.Location = New System.Drawing.Point(291, 42)
+        Me.lblPatAs.Name = "lblPatAs"
+        Me.lblPatAs.Size = New System.Drawing.Size(133, 15)
+        Me.lblPatAs.TabIndex = 62
+        Me.lblPatAs.Text = "Patentes Asignadas"
         '
-        'Label6
+        'lblFamAsig
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(835, 54)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(132, 15)
-        Me.Label6.TabIndex = 64
-        Me.Label6.Text = "Familias Asignadas"
+        Me.lblFamAsig.AutoSize = True
+        Me.lblFamAsig.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFamAsig.Location = New System.Drawing.Point(835, 54)
+        Me.lblFamAsig.Name = "lblFamAsig"
+        Me.lblFamAsig.Size = New System.Drawing.Size(132, 15)
+        Me.lblFamAsig.TabIndex = 64
+        Me.lblFamAsig.Text = "Familias Asignadas"
         '
-        'Label7
+        'lblPatNeg
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(291, 275)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(122, 15)
-        Me.Label7.TabIndex = 66
-        Me.Label7.Text = "Patentes negadas"
+        Me.lblPatNeg.AutoSize = True
+        Me.lblPatNeg.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPatNeg.Location = New System.Drawing.Point(291, 275)
+        Me.lblPatNeg.Name = "lblPatNeg"
+        Me.lblPatNeg.Size = New System.Drawing.Size(122, 15)
+        Me.lblPatNeg.TabIndex = 66
+        Me.lblPatNeg.Text = "Patentes negadas"
         '
-        'Label8
+        'lblUsuario
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(342, 18)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(57, 15)
-        Me.Label8.TabIndex = 67
-        Me.Label8.Text = "Usuario"
+        Me.lblUsuario.AutoSize = True
+        Me.lblUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuario.Location = New System.Drawing.Point(342, 18)
+        Me.lblUsuario.Name = "lblUsuario"
+        Me.lblUsuario.Size = New System.Drawing.Size(57, 15)
+        Me.lblUsuario.TabIndex = 67
+        Me.lblUsuario.Text = "Usuario"
         '
         'ComboBox1
         '
@@ -111,16 +111,16 @@ Partial Class AsignacionUsuarioPatentes
         Me.ComboBox1.Size = New System.Drawing.Size(150, 21)
         Me.ComboBox1.TabIndex = 68
         '
-        'Button4
+        'btnVolver
         '
-        Me.Button4.BackColor = System.Drawing.Color.Chartreuse
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(957, 504)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 45)
-        Me.Button4.TabIndex = 69
-        Me.Button4.Text = "Volver al Menu"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnVolver.BackColor = System.Drawing.Color.Chartreuse
+        Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Location = New System.Drawing.Point(957, 504)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(91, 45)
+        Me.btnVolver.TabIndex = 69
+        Me.btnVolver.Text = "Volver al Menu"
+        Me.btnVolver.UseVisualStyleBackColor = False
         '
         'Button7
         '
@@ -226,6 +226,7 @@ Partial Class AsignacionUsuarioPatentes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(1071, 561)
+        Me.ControlBox = False
         Me.Controls.Add(Me.TreeView2)
         Me.Controls.Add(Me.TreeView1)
         Me.Controls.Add(Me.ListBox3)
@@ -237,14 +238,14 @@ Partial Class AsignacionUsuarioPatentes
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblUsuario)
+        Me.Controls.Add(Me.lblPatNeg)
+        Me.Controls.Add(Me.lblFamAsig)
+        Me.Controls.Add(Me.lblPatAs)
+        Me.Controls.Add(Me.lblFam)
+        Me.Controls.Add(Me.lblPat)
         Me.Name = "AsignacionUsuarioPatentes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Asignación Usuario - Familia - Patentes"
@@ -252,14 +253,14 @@ Partial Class AsignacionUsuarioPatentes
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents lblPat As System.Windows.Forms.Label
+    Friend WithEvents lblFam As System.Windows.Forms.Label
+    Friend WithEvents lblPatAs As System.Windows.Forms.Label
+    Friend WithEvents lblFamAsig As System.Windows.Forms.Label
+    Friend WithEvents lblPatNeg As System.Windows.Forms.Label
+    Friend WithEvents lblUsuario As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button9 As Button

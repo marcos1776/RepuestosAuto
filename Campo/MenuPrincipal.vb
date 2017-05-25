@@ -65,8 +65,10 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub AdministrarVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdministrarVentasToolStripMenuItem.Click
-        AdministrarVentas.MdiParent = Me
-        AdministrarVentas.Show()
+        Dim Adm As New AdministrarVentas
+
+        Adm.MdiParent = Me
+        Adm.Show()
     End Sub
 
     Private Sub NuevaVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevaVentaToolStripMenuItem.Click

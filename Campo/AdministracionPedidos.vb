@@ -306,12 +306,12 @@
 
         consultarPedido.Button2.Hide()
         consultarPedido.Button5.Hide()
-        consultarPedido.Button3.Hide()
+        consultarPedido.btnModif.Hide()
 
         consultarPedido.TextBox1.Hide()
-        consultarPedido.Label2.Hide()
+        consultarPedido.lblBusc.Hide()
         consultarPedido.TextBox3.Hide()
-        consultarPedido.Label4.Hide()
+        consultarPedido.lblCant.Hide()
 
         If Login.ID_IDIOMA = 1 Then
             consultarPedido.Text = "Consultar Pedido"

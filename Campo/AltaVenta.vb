@@ -123,6 +123,27 @@
         buscar.DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         buscar.Show()
         buscar.DataGridView1.DataSource = dt
+
+        ''
+        If tipo = "c" Then
+            If Login.ID_IDIOMA <> 1 Then
+                buscar.Text = "Search client"
+                buscar.DataGridView1.Columns(0).HeaderText = "Name"
+                buscar.DataGridView1.Columns(1).HeaderText = "Surname"
+                buscar.DataGridView1.Columns(2).HeaderText = "Identification"
+            Else
+
+            End If
+        Else
+            If Login.ID_IDIOMA <> 1 Then
+                buscar.Text = "Search client"
+                buscar.DataGridView1.Columns(0).HeaderText = "Busissness Name"
+                buscar.DataGridView1.Columns(0).HeaderText = "CUIT"
+            Else
+
+            End If
+        End If
+        ''
     End Sub
 
     'Cuando le doy añadir

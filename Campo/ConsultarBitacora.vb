@@ -10,6 +10,7 @@
 
     Private Sub ConsultarBitacora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
 
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dd/MM/yyyy"
@@ -58,12 +59,19 @@
         Movimientos = listadoMovimientos.obtenerListadoMovimientos()
 
         DataGridView1.DataSource = Movimientos
+
+        If (Login.ID_IDIOMA <> 1) Then
+            Button1.Text = "Print List"
+            DataGridView1.Columns(0).HeaderText = "Nick"
+            DataGridView1.Columns(1).HeaderText = "Criticity"
+            DataGridView1.Columns(2).HeaderText = "Date"
+            DataGridView1.Columns(3).HeaderText = "Description"
+        End If
+
     End Sub
 
     'Realizar consulta de bitacora.
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
-
-
         Dim Movimientos As New DataTable
         Dim listadoMovimientos As New BLL.Listas
         'Movimientos = listadoMovimientos.obtenerListadoMovimientos(DateTimePicker1.Value, DateTimePicker2.Value, ComboBox1.Text, ComboBox2.Text)

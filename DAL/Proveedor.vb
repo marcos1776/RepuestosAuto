@@ -209,8 +209,8 @@ Public Class Proveedor
         Dim query As String = "Update Proveedor set Nombre_Empresa ='" & nombre_empresa & "', " +
         "nombre_contacto = '" & nombre_contacto & "', " +
         "apellido_contacto= '" & apellido_contacto & "', " +
-        "Mail= '" & email & "', " +
-        "Where idUsuario =" & idProv
+        "Mail= '" & email & "' " +
+        "Where idProveedor =" & idProv
 
 
         Dim sqlCon As New SqlConnection(My.Resources.con)

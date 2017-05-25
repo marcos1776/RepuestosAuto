@@ -266,7 +266,7 @@
     'Modifico el Proveedor
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles btnAplicarCambios.Click
         Dim datosProveedor As DataSet
-        Dim proveedor As New BLL.Proveedor
+        Dim proveedor As New BLL.Proveedor(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text)
         Dim rowIndex As Integer = DataGridView1.CurrentCell.RowIndex
         Dim row As DataGridViewRow = DataGridView1.Rows(rowIndex)
         Dim proveedorNombre As String = row.Cells(0).Value
@@ -281,6 +281,8 @@
 
         ' Modificar El proveedor
 
+        proveedor.ModificarProveedor(proveedor, proveedor.idProveedor)
+        'proveedor.ModificarProveedor(usuario, usuario._idUsuario)
 
         For Each tel As String In ListBox1.Items
             listaTelefonos.Add(seguridad.Encriptar(tel))

@@ -34,11 +34,21 @@
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
 
-        Carrito.Columns.Add("idArticulo", GetType(String))
-        Carrito.Columns.Add("Descripcion", GetType(String))
-        Carrito.Columns.Add("Cantidad", GetType(String))
-        Carrito.Columns.Add("PrecioVenta", GetType(String))
-        Carrito.Columns.Add("Subtotal", GetType(String))
+
+        If Login.ID_IDIOMA = 1 Then
+            Carrito.Columns.Add("idArticulo", GetType(String))
+            Carrito.Columns.Add("Descripcion", GetType(String))
+            Carrito.Columns.Add("Cantidad", GetType(String))
+            Carrito.Columns.Add("PrecioVenta", GetType(String))
+            Carrito.Columns.Add("Subtotal", GetType(String))
+        Else
+            Carrito.Columns.Add("Article Id", GetType(String))
+            Carrito.Columns.Add("Description", GetType(String))
+            Carrito.Columns.Add("Quantity", GetType(String))
+            Carrito.Columns.Add("Sale Price", GetType(String))
+            Carrito.Columns.Add("Subtotal", GetType(String))
+        End If
+
 
         cargarDataGrid()
 
@@ -96,12 +106,20 @@
         Dim articulosComprados As New DataTable
         If ds.Tables("ArticulosComprados").Rows.Count > 0 Then
             articulosComprados = ds.Tables("ArticulosComprados").Select().CopyToDataTable
+
         End If
 
 
         DataGridView1.DataSource = articulosComprados
         DataGridView1.Columns(2).Visible = False
         DataGridView1.Columns(3).Visible = False
+
+
+        If Login.ID_IDIOMA <> 1 Then
+            DataGridView1.Columns(0).HeaderText = "Article Id"
+            DataGridView1.Columns(1).HeaderText = "Description"
+            DataGridView1.Columns(4).HeaderText = "Price"
+        End If
 
         'Dim btn As New DataGridViewButtonColumn
         'btn.HeaderText = "Click Data"
@@ -182,6 +200,7 @@
         dt2.Rows.Add(row)
 
         DataGridView2.DataSource = dt2
+
 
 
         Label5.Text = DataGridView2.Rows.Cast(Of DataGridViewRow)().Sum(Function(x) Convert.ToDouble(x.Cells(3).Value))

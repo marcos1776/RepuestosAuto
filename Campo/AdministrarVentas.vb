@@ -55,11 +55,33 @@
         If (dt.Select("EsCancelada='N'").Count > 0) Then
             realizadas = dt.Select("esCancelada = 'N'").CopyToDataTable
             DataGridView1.DataSource = realizadas
+
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView1.Columns(0).HeaderText = "Sale Id"
+                DataGridView1.Columns(1).HeaderText = "Nick"
+                DataGridView1.Columns(2).HeaderText = "Client"
+                DataGridView1.Columns(3).HeaderText = "Date"
+                DataGridView1.Columns(4).HeaderText = "Total"
+                DataGridView1.Columns(5).HeaderText = "Is Cancelled?"
+            End If
+
         End If
 
         If (dt.Select("EsCancelada='Y'").Count > 0) Then
             canceladas = dt.Select("esCancelada = 'Y'").CopyToDataTable
             DataGridView2.DataSource = canceladas
+
+
+            If Login.ID_IDIOMA <> 1 Then
+                DataGridView2.Columns(0).HeaderText = "Sale Id"
+                DataGridView2.Columns(1).HeaderText = "Nick"
+                DataGridView2.Columns(2).HeaderText = "Client"
+                DataGridView2.Columns(3).HeaderText = "Date"
+                DataGridView2.Columns(4).HeaderText = "Total"
+                DataGridView2.Columns(5).HeaderText = "Is Cancelled?"
+            End If
+
         End If
 
 
@@ -96,6 +118,14 @@
 
         modificarVenta.DataGridView2.DataSource = dt
         modificarVenta.DataGridView2.Columns(0).Visible = False
+
+        If (Login.ID_IDIOMA <> 1) Then
+            modificarVenta.DataGridView2.Columns(1).HeaderText = "Article Id"
+            modificarVenta.DataGridView2.Columns(2).HeaderText = "Description"
+            modificarVenta.DataGridView2.Columns(3).HeaderText = "Sale Price"
+            ModificarVenta.DataGridView2.Columns(4).HeaderText = "Quantity"
+
+        End If
 
         'modificarVenta.Label5.Text = dt.Compute("Sum()")
 

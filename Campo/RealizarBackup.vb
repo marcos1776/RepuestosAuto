@@ -2,14 +2,14 @@
 
 Public Class RealizarBackup
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Close()
         'MenuPrincipal.Show()
     End Sub
 
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs)
-        Label1.Visible = True
+        lblParte.Visible = True
         'Label2.Visible = True
         TextBox3.Visible = True
         'ComboBox1.Visible = True
@@ -18,20 +18,42 @@ Public Class RealizarBackup
 
     Private Sub RealizarBackup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.FormBorderStyle = Windows.Forms.FormBorderStyle.FixedDialog
-        Label1.Visible = False
+        lblParte.Visible = False
         'Label2.Visible = False
         TextBox3.Visible = False
         'ComboBox1.Visible = False
+
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim dtMensajes As New DataTable()
+        dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 20)
+
+
+        lblDestino.Text = dtMensajes.Rows(0).Item(5).ToString
+        lblNombre.Text = dtMensajes.Rows(1).Item(5).ToString
+        lblParticion.Text = dtMensajes.Rows(2).Item(5).ToString
+        RadioButton1.Text = dtMensajes.Rows(3).Item(5).ToString
+        RadioButton2.Text = dtMensajes.Rows(4).Item(5).ToString
+        btnExamin.Text = dtMensajes.Rows(5).Item(5).ToString
+        btnReali.Text = dtMensajes.Rows(6).Item(5).ToString
+        btnCancel.Text = dtMensajes.Rows(7).Item(5).ToString
+        lblParte.Text = dtMensajes.Rows(8).Item(5).ToString
+
+        If Login.ID_IDIOMA <> 1 Then
+            Me.Text = "Generate Backup"
+        End If
+
+
+
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs)
-        Label1.Visible = False
+        lblParte.Visible = False
         'Label2.Visible = False
         TextBox3.Visible = False
         'ComboBox1.Visible = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnExamin.Click
         'Dim fd As OpenFileDialog = New OpenFileDialog()
 
         Dim fd As New FolderBrowserDialog
@@ -63,7 +85,7 @@ Public Class RealizarBackup
     End Sub
 
     'Realizar Back UP
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnReali.Click
         Dim seg As New BLL.Seguridad("Password")
 
         'Poner acà la direccion de la base
@@ -105,12 +127,12 @@ Public Class RealizarBackup
     End Sub
 
     Private Sub RadioButton2_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
-        Label1.Visible = False
+        lblParte.Visible = False
         TextBox3.Visible = False
     End Sub
 
     Private Sub RadioButton1_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-        Label1.Visible = True
+        lblParte.Visible = True
         TextBox3.Visible = True
     End Sub
 End Class

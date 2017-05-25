@@ -22,13 +22,13 @@ Partial Class ModificarPedido
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnModif = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.lblCarro = New System.Windows.Forms.Label()
+        Me.lblCant = New System.Windows.Forms.Label()
+        Me.lblArticulos = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblBusc = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
@@ -40,57 +40,57 @@ Partial Class ModificarPedido
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button3
+        'btnModif
         '
-        Me.Button3.BackColor = System.Drawing.Color.Chartreuse
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(57, 515)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(91, 45)
-        Me.Button3.TabIndex = 62
-        Me.Button3.Text = "Modificar Pedido"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnModif.BackColor = System.Drawing.Color.Chartreuse
+        Me.btnModif.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModif.Location = New System.Drawing.Point(57, 515)
+        Me.btnModif.Name = "btnModif"
+        Me.btnModif.Size = New System.Drawing.Size(91, 45)
+        Me.btnModif.TabIndex = 62
+        Me.btnModif.Text = "Modificar Pedido"
+        Me.btnModif.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnCancel
         '
-        Me.Button6.BackColor = System.Drawing.Color.LightSalmon
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(407, 537)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 61
-        Me.Button6.Text = "Cancelar"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.Color.LightSalmon
+        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(407, 537)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 61
+        Me.btnCancel.Text = "Cancelar"
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'Label5
+        'lblCarro
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 245)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(116, 15)
-        Me.Label5.TabIndex = 59
-        Me.Label5.Text = "Carro de Compra"
+        Me.lblCarro.AutoSize = True
+        Me.lblCarro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCarro.Location = New System.Drawing.Point(12, 245)
+        Me.lblCarro.Name = "lblCarro"
+        Me.lblCarro.Size = New System.Drawing.Size(116, 15)
+        Me.lblCarro.TabIndex = 59
+        Me.lblCarro.Text = "Carro de Compra"
         '
-        'Label4
+        'lblCant
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(365, 34)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 15)
-        Me.Label4.TabIndex = 57
-        Me.Label4.Text = "Cantidad"
+        Me.lblCant.AutoSize = True
+        Me.lblCant.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCant.Location = New System.Drawing.Point(365, 34)
+        Me.lblCant.Name = "lblCant"
+        Me.lblCant.Size = New System.Drawing.Size(64, 15)
+        Me.lblCant.TabIndex = 57
+        Me.lblCant.Text = "Cantidad"
         '
-        'Label3
+        'lblArticulos
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(9, 4)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 15)
-        Me.Label3.TabIndex = 55
-        Me.Label3.Text = "Articulos"
+        Me.lblArticulos.AutoSize = True
+        Me.lblArticulos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblArticulos.Location = New System.Drawing.Point(9, 4)
+        Me.lblArticulos.Name = "lblArticulos"
+        Me.lblArticulos.Size = New System.Drawing.Size(62, 15)
+        Me.lblArticulos.TabIndex = 55
+        Me.lblArticulos.Text = "Articulos"
         '
         'TextBox1
         '
@@ -99,15 +99,15 @@ Partial Class ModificarPedido
         Me.TextBox1.Size = New System.Drawing.Size(59, 20)
         Me.TextBox1.TabIndex = 64
         '
-        'Label2
+        'lblBusc
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(9, 34)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(103, 15)
-        Me.Label2.TabIndex = 66
-        Me.Label2.Text = "Buscar Articulo"
+        Me.lblBusc.AutoSize = True
+        Me.lblBusc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBusc.Location = New System.Drawing.Point(9, 34)
+        Me.lblBusc.Name = "lblBusc"
+        Me.lblBusc.Size = New System.Drawing.Size(103, 15)
+        Me.lblBusc.TabIndex = 66
+        Me.lblBusc.Text = "Buscar Articulo"
         '
         'TextBox3
         '
@@ -198,15 +198,16 @@ Partial Class ModificarPedido
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblBusc)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.btnModif)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.lblCarro)
+        Me.Controls.Add(Me.lblCant)
+        Me.Controls.Add(Me.lblArticulos)
         Me.Name = "ModificarPedido"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modificar Pedido"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -214,13 +215,13 @@ Partial Class ModificarPedido
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents btnModif As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents lblCarro As System.Windows.Forms.Label
+    Friend WithEvents lblCant As System.Windows.Forms.Label
+    Friend WithEvents lblArticulos As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblBusc As System.Windows.Forms.Label
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridView2 As DataGridView

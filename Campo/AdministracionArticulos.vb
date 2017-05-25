@@ -43,6 +43,7 @@
         lblMax.Text = dtMensajes.Rows(6).Item(5).ToString
         lblMargen.Text = dtMensajes.Rows(7).Item(5).ToString
         btnModifArtic.Text = dtMensajes.Rows(8).Item(5).ToString
+        btnAplicCam.Text = dtMensajes.Rows(10).Item(5).ToString
 
         Label1.Text = dtMensajes.Rows(2).Item(5).ToString
 

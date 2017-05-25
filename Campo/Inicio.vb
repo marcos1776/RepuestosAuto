@@ -41,7 +41,7 @@ Public Class Inicio
                 Button1.Enabled = True
             End If
 
-            Await Task.Delay(50)
+            Await Task.Delay(10)
         Next
 
 

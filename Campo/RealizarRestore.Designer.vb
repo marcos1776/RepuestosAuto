@@ -22,31 +22,31 @@ Partial Class RealizarRestore
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lblOrigen = New System.Windows.Forms.Label()
+        Me.btnExam = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnRealizar = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label3
+        'lblOrigen
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 24)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 15)
-        Me.Label3.TabIndex = 58
-        Me.Label3.Text = "Origen archivo"
+        Me.lblOrigen.AutoSize = True
+        Me.lblOrigen.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrigen.Location = New System.Drawing.Point(12, 24)
+        Me.lblOrigen.Name = "lblOrigen"
+        Me.lblOrigen.Size = New System.Drawing.Size(100, 15)
+        Me.lblOrigen.TabIndex = 58
+        Me.lblOrigen.Text = "Origen archivo"
         '
-        'Button1
+        'btnExam
         '
-        Me.Button1.Location = New System.Drawing.Point(468, 16)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 57
-        Me.Button1.Text = "Examinar..."
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnExam.Location = New System.Drawing.Point(468, 16)
+        Me.btnExam.Name = "btnExam"
+        Me.btnExam.Size = New System.Drawing.Size(75, 23)
+        Me.btnExam.TabIndex = 57
+        Me.btnExam.Text = "Examinar..."
+        Me.btnExam.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
@@ -56,27 +56,27 @@ Partial Class RealizarRestore
         Me.TextBox2.Size = New System.Drawing.Size(324, 20)
         Me.TextBox2.TabIndex = 56
         '
-        'Button3
+        'btnRealizar
         '
-        Me.Button3.BackColor = System.Drawing.Color.Chartreuse
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(117, 70)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(91, 45)
-        Me.Button3.TabIndex = 60
-        Me.Button3.Text = "Realizar Restore"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnRealizar.BackColor = System.Drawing.Color.Chartreuse
+        Me.btnRealizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRealizar.Location = New System.Drawing.Point(117, 70)
+        Me.btnRealizar.Name = "btnRealizar"
+        Me.btnRealizar.Size = New System.Drawing.Size(91, 45)
+        Me.btnRealizar.TabIndex = 60
+        Me.btnRealizar.Text = "Realizar Restore"
+        Me.btnRealizar.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnCancel
         '
-        Me.Button6.BackColor = System.Drawing.Color.LightSalmon
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(387, 92)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 59
-        Me.Button6.Text = "Cancelar"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.Color.LightSalmon
+        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(387, 92)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 59
+        Me.btnCancel.Text = "Cancelar"
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
         'RealizarRestore
         '
@@ -85,10 +85,10 @@ Partial Class RealizarRestore
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(564, 127)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnRealizar)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.lblOrigen)
+        Me.Controls.Add(Me.btnExam)
         Me.Controls.Add(Me.TextBox2)
         Me.Name = "RealizarRestore"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -97,9 +97,9 @@ Partial Class RealizarRestore
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lblOrigen As System.Windows.Forms.Label
+    Friend WithEvents btnExam As System.Windows.Forms.Button
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents btnRealizar As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
 End Class

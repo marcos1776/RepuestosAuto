@@ -102,6 +102,7 @@ Partial Class AltaFamilia
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "AltaFamilia"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nueva Familia"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -1,6 +1,6 @@
 ﻿Public Class AltaArticulo
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnAgreg.Click
         'MsgBox("¿Estas seguro que deseas eliminar el artículo?", MsgBoxStyle.OkCancel, "Eliminar Articulo")
         Dim proveedor As String = ComboBox1.Text
         Dim articulo As New BLL.Articulo()
@@ -16,12 +16,42 @@
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Hide()
         MenuPrincipal.Show()
     End Sub
 
     Private Sub AltaArticulo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim seguridad As New BLL.Seguridad("Password")
+        Dim dtMensajes As New DataTable()
+        dtMensajes = seguridad.ObtenerMensajes(Login.ID_IDIOMA, 16)
+
+
+        lblNombre.Text = dtMensajes.Rows(0).Item(5).ToString
+        lblProv.Text = dtMensajes.Rows(1).Item(5).ToString
+        lblDesc.Text = dtMensajes.Rows(2).Item(5).ToString
+        lblCod.Text = dtMensajes.Rows(3).Item(5).ToString
+        lblStock.Text = dtMensajes.Rows(4).Item(5).ToString
+        lblMarg.Text = dtMensajes.Rows(5).Item(5).ToString
+        lblListado.Text = dtMensajes.Rows(6).Item(5).ToString
+        lblAutosSel.Text = dtMensajes.Rows(7).Item(5).ToString
+        btnAgreg.Text = dtMensajes.Rows(8).Item(5).ToString
+        btnCancel.Text = dtMensajes.Rows(9).Item(5).ToString
+
+
+
+        If Login.ID_IDIOMA <> 1 Then
+            Me.Text = "New Article"
+        End If
+
+
+
+
+
+
+
+
+
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         ComboBox1.Items.Clear()
         ListBox1.Items.Clear()

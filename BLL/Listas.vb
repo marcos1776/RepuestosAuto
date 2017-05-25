@@ -114,39 +114,15 @@
     Public Function obtenerListadoMovimientos(user As String, criticidad As String, desde As String, hasta As String) As DataTable
         Dim dt As New DataTable
         Dim listadoMovimientos As New DAL.Listas
-
-
-        'Dim listadoParametros As New List(Of String)
-
-
-        'If (user IsNot Nothing) Then
-        '    Dim s As String = "u1.nick = '" & user & "'"
-        'End If
-
-        'If (criticidad IsNot Nothing) Then
-        '    Dim s As String = "b1.Criticidad = '" & criticidad & "'"
-        'End If
-
-        ''If (desde IsNot Nothing) Then
-        ''    Dim s As String = "u1.nick = '" & user & "'"
-        ''End If
-
-
-
-        'Dim listado As New List(Of String)
-        'listado.Add(user)
-        'listado.Add(criticidad)
-        'listado.Add(desde)
-        'listado.Add(hasta)
-
-
-
-
-
-
+        Dim seg As New BLL.Seguridad("Password")
 
         'dt = listadoMovimientos.obtenerListadoMovimientos(desde, hasta, user, criticidad)
-        dt = listadoMovimientos.obtenerListadoMovimientos(user, criticidad, desde, hasta)
+        dt = listadoMovimientos.obtenerListadoMovimientos(seg.Encriptar(Trim(user)), criticidad, desde, hasta)
+
+        For Each row As DataRow In dt.Rows
+            row.Item(0) = seg.Desencriptar(row.Item(0).ToString)
+        Next
+
 
         Return dt
     End Function

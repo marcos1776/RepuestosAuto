@@ -132,6 +132,7 @@ Partial Class ModificarFamilia
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(223, 235)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(45, 23)
@@ -141,6 +142,7 @@ Partial Class ModificarFamilia
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(223, 190)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(45, 23)
@@ -168,6 +170,7 @@ Partial Class ModificarFamilia
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "ModificarFamilia"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modificar Familia"
         Me.ResumeLayout(False)
         Me.PerformLayout()
