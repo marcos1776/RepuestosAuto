@@ -50,7 +50,19 @@
 
 
 
+        ComboBox1.Items.Clear()
 
+        Dim ds As New DataSet
+        Dim listadoProveedores As New BLL.Listas
+        ds = listadoProveedores.obtenerProveedores()
+
+        Dim habilitados As DataTable = ds.Tables("DatosProveedores").Select().CopyToDataTable
+
+        If ds.Tables("DatosProveedores").Select("esActivo = 'Y'").Count > 0 Then
+            For Each h As DataRow In habilitados.Rows
+                ComboBox1.Items.Add(h.Item("Nombre_Empresa"))
+            Next
+        End If
 
 
 
@@ -326,5 +338,15 @@
         consultarPedido.DataGridView2.DataSource = datosPedido.Tables("detallePedido")
 
         consultarPedido.Show()
+    End Sub
+
+    'Buscar Pedidos por un rango
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+        Dim dt As New DataTable
+        Dim pedidos As New BLL.Pedido()
+        Dim seguridad As New BLL.Seguridad("Password")
+        dt = pedidos.obtenerPedidosFiltrados(DateTimePicker1.Value.ToString("yyyy-MM-dd"), DateTimePicker2.Value.ToString("yyyy-MM-dd"))
+
+        DataGridView1.DataSource = dt
     End Sub
 End Class

@@ -174,5 +174,21 @@ Public Class Pedido
         Dim pedido As New DAL.Pedido
         pedido.eliminarPedido(idPedido)
     End Sub
+
+
+    Public Function obtenerPedidosFiltrados(dt1 As String, dt2 As String) As DataTable
+        Dim ped As New DAL.Pedido
+        Dim seg As New BLL.Seguridad("Password")
+        Dim dt As New DataTable
+
+        dt = ped.obtenerPedidosFiltrados(dt1, dt2)
+
+        For Each row In dt.Rows
+            row.Item(1) = seg.Desencriptar(row.Item(1).ToString)
+            row.Item(2) = seg.Desencriptar(row.Item(2).ToString)
+        Next
+
+        Return dt
+    End Function
 End Class
 

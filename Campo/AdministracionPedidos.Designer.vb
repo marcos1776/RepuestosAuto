@@ -33,12 +33,12 @@ Partial Class AdministracionPedidos
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.btnConsul = New System.Windows.Forms.Button()
         Me.lblProv = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.lblBuscarDesde = New System.Windows.Forms.Label()
         Me.btnConfi = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -46,7 +46,7 @@ Partial Class AdministracionPedidos
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.CustomFormat = "dd - mm - yyyy"
+        Me.DateTimePicker2.CustomFormat = ""
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker2.Location = New System.Drawing.Point(148, 60)
         Me.DateTimePicker2.Name = "DateTimePicker2"
@@ -156,16 +156,9 @@ Partial Class AdministracionPedidos
         Me.lblProv.TabIndex = 80
         Me.lblProv.Text = "Proveedor"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(350, 16)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(153, 20)
-        Me.TextBox1.TabIndex = 79
-        '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.CustomFormat = "dd - mm - yyyy"
+        Me.DateTimePicker1.CustomFormat = ""
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(148, 20)
         Me.DateTimePicker1.Name = "DateTimePicker1"
@@ -205,18 +198,26 @@ Partial Class AdministracionPedidos
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.lblBuscarDesde)
         Me.GroupBox1.Controls.Add(Me.btnBuscar)
         Me.GroupBox1.Controls.Add(Me.lblHasta)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox1.Controls.Add(Me.lblProv)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(710, 100)
         Me.GroupBox1.TabIndex = 83
         Me.GroupBox1.TabStop = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(359, 19)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(287, 21)
+        Me.ComboBox1.TabIndex = 83
         '
         'AdministracionPedidos
         '
@@ -257,10 +258,10 @@ Partial Class AdministracionPedidos
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
     Friend WithEvents btnConsul As System.Windows.Forms.Button
     Friend WithEvents lblProv As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents lblBuscarDesde As System.Windows.Forms.Label
     Friend WithEvents btnConfi As Button
     Friend WithEvents btnBuscar As Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

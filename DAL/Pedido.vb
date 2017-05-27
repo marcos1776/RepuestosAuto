@@ -96,6 +96,33 @@ Public Class Pedido
         Return t
     End Function
 
+
+    Public Function obtenerPedidosFiltrados(dt1 As String, dt2 As String) As DataTable
+        Dim sqlCon As New SqlConnection(My.Resources.con)
+        sqlCon.Open()
+
+        Dim query As String = "select p1.idPedido as 'N° Pedido', prov.Nombre_Empresa as 'Proveedor', usu.Nick as 'Usuario', p1.Fecha, p1.Total, p1.Estado from pedido p1 " +
+        "join proveedor prov on prov.idProveedor = p1.IdProveedor " +
+        "join usuario usu on usu.IdUsuario = p1.IdUsuario " +
+        "where convert(date,p1.Fecha,106) >= '" & dt1 & "' " +
+        "and convert(date,p1.Fecha,106) <= '" & dt2 & "' " +
+        "and p1.Estado = 'Pendiente' "
+
+        Dim com As New SqlCommand(query, sqlCon)
+
+        com.CommandType = CommandType.Text
+        Dim dr As SqlDataReader
+        dr = com.ExecuteReader
+
+        Dim t As DataTable = New DataTable
+        t.Load(dr)
+
+        com.ExecuteNonQuery()
+
+        sqlCon.Close()
+        Return t
+    End Function
+
     Public Function nuevoPedido(total As Double, prov As String, idUsuario As Integer) As Integer
         'Agregar el IdUsuario
 
